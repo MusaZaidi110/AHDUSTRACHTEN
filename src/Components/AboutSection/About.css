@@ -1,0 +1,143 @@
+.about {
+  background-color: #333;
+  width: 100%;
+  min-height: 500px;
+  padding: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contentSection {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.contentList {
+  width: 50%;
+}
+
+.contentList ul {
+  color: #fff;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px; /* Adjust spacing between items */
+}
+
+.contentList ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contentList ul li .text span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contentList ul li .text {
+  font-size: 14px;
+  text-wrap: balance;
+  text-align: left;
+}
+
+.contentList ul li img {
+  width: 40px;
+}
+
+.rotator {
+  width: 50%;
+}
+.banner {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.banner .slider {
+  position: absolute;
+  top: 10%;
+  width: 100px;
+  height: 150px;
+  left: calc(50% - 50px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 20s linear infinite;
+  z-index: 2;
+}
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(220px);
+}
+.banner .slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1023px) {
+  .banner .slider {
+    width: 160px;
+    height: 200px;
+    left: calc(50% - 80px);
+  }
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(300px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .about {
+    padding: 1rem;
+  }
+  .mainTitle {
+    font-size: 3rem;
+  }
+  .contentSection {
+    margin-top: 2rem;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .contentList {
+    width: 100%;
+  }
+  .rotator {
+    width: 100%;
+  }
+  .banner {
+    height: 30vh;
+    margin-top: 50px;
+  }
+  .banner .slider {
+    width: 100px;
+    height: 150px;
+    left: calc(50% - 50px);
+  }
+
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(180px);
+  }
+  .contentList ul {
+    grid-template-columns: 1fr; /* Stack items in one column on smaller screens */
+  }
+}
