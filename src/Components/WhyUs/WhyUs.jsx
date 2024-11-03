@@ -45,6 +45,10 @@ const WhyUs = () => {
             </p>
           </div>
         </div>
+
+        <a href="#" className="btn bigBtn">
+          Let's connect with us
+        </a>
       </section>
     </>
   );
