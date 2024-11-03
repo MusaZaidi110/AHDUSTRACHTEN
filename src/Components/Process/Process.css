@@ -16,9 +16,10 @@
   align-items: center;
   background-color: #1a1a1a;
   padding: 20px;
+  margin-top: 24px;
   border-radius: 10px;
   overflow-x: auto;
-  height: 500px;
+  height: 520px;
   position: relative;
 }
 
@@ -97,5 +98,41 @@
 @media screen and (max-width: 678px) {
   .process {
     padding: 2rem;
+  }
+  .process-flow {
+    height: 620px;
+  }
+  .dashed-line {
+    display: none;
+  }
+  .process-step:nth-child(2) {
+    position: absolute;
+    top: 60px;
+    left: 168px;
+  }
+  .process-step:nth-child(3) {
+    position: absolute;
+    top: 170px;
+    left: 10px;
+  }
+  .process-step:nth-child(4) {
+    position: absolute;
+    top: 240px;
+    left: 168px;
+  }
+  .process-step:nth-child(5) {
+    position: absolute;
+    top: 320px;
+    left: 10px;
+  }
+  .process-step:nth-child(6) {
+    position: absolute;
+    top: 410px;
+    left: 168px;
+  }
+  .process-step:last-child {
+    position: absolute;
+    top: 470px;
+    left: 10px;
   }
 }
