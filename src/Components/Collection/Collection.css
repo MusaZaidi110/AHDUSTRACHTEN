@@ -21,10 +21,10 @@
 }
 
 .collectionCards {
-  max-width: 1150px;
-  margin: 2rem auto;
-  display: flex;
   margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   gap: 25px;
 }
 
