@@ -9,6 +9,7 @@ import PricingPage from "./Pages/PricingPage.jsx";
 import ContactPage from "./Pages/ContactPage.jsx";
 import GalleryPage from "./Pages/GalleryPage.jsx";
 import Layout from "./Pages/Layout.jsx";
+import ProductDetail from "./Pages/ProductDetails/ProductDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <ProductPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/Products/:id",
+    element: (
+      <Layout>
+        <ProductDetail />
       </Layout>
     ),
   },

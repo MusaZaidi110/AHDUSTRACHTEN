@@ -9,6 +9,7 @@
   ); /* Semi-transparent white for glass effect */
   left: 0;
   right: 0;
+  top: 0;
   width: 100%;
   color: #333;
   height: 70px;
@@ -83,7 +84,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1220px) {
+@media (max-width: 786px) {
   /* Display the hamburger icon only on mobile */
   .navbar-hamburger {
     display: block;
