@@ -1,0 +1,101 @@
+.process {
+  background-color: #333;
+  width: 100%;
+  min-height: 500px;
+  padding: 5rem;
+}
+
+.process .borderLine .upline {
+  width: 270% !important;
+}
+
+/* ProcessFlow.css */
+.process-flow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  height: 500px;
+  position: relative;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  width: 150px;
+  height: 135px;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 8px;
+  text-align: center;
+}
+.process-step:first-child {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.process-step:nth-child(2) {
+  position: absolute;
+  top: 60px;
+  left: 280px;
+}
+.process-step:nth-child(3) {
+  position: absolute;
+  top: 110px;
+  left: 550px;
+}
+.process-step:nth-child(4) {
+  position: absolute;
+  top: 143px;
+  right: 19px;
+}
+.process-step:nth-child(5) {
+  position: absolute;
+  top: 265px;
+  left: 14%;
+}
+.process-step:nth-child(6) {
+  position: absolute;
+  top: 319px;
+  left: 42%;
+}
+.process-step:last-child {
+  position: absolute;
+  top: 361px;
+  right: 15%;
+}
+
+.process-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.dashed-line {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 120px;
+  height: 2px;
+  border-top: 2px dashed #ffffff;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.process-step:nth-child(4) .dashed-line {
+  display: none;
+}
+
+.process-step:last-child .dashed-line {
+  display: none;
+}
+
+@media screen and (max-width: 678px) {
+  .process {
+    padding: 2rem;
+  }
+}

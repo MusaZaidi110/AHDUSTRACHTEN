@@ -1,19 +1,26 @@
 import React from "react";
 import "./ContactPage.css"; // Optional: Import CSS for styling
+import VillaIcon from "@mui/icons-material/Villa";
+import PhoneCallbackIcon from "@mui/icons-material/PhoneCallback";
+import MarkunreadIcon from "@mui/icons-material/Markunread";
 
 const Contact = () => {
   return (
-    <section className="contactPage">
+    <div className="contactPage">
       <main className="cd__main">
         <section>
           <div className="section-header">
             <div className="container">
               <h2>Contact Us</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                We value your feedback and inquiries! If you have any questions,
+                comments, or need assistance, please don't hesitate to reach
+                out. Our dedicated team is here to help you with any information
+                you may need regarding our products, services, or your order. We
+                strive to respond to all messages promptly, ensuring you have a
+                seamless experience with us. Whether you're seeking more details
+                about our offerings or have specific concerns, we're just a
+                message away!
               </p>
             </div>
           </div>
@@ -23,34 +30,26 @@ const Contact = () => {
               <div className="contact-info">
                 <div className="contact-info-item">
                   <div className="contact-info-icon">
-                    <i className="fas fa-home"></i>
+                    <i>
+                      <VillaIcon />
+                    </i>
                   </div>
 
                   <div className="contact-info-content">
                     <h4>Address</h4>
                     <p>
-                      4671 Sugar Camp Road,
-                      <br /> Owatonna, Minnesota,
+                      Islamabad/Rawalpindi,
+                      <br /> Pakistan
                       <br />
-                      55060
                     </p>
                   </div>
                 </div>
 
                 <div className="contact-info-item">
                   <div className="contact-info-icon">
-                    <i className="fas fa-phone"></i>
-                  </div>
-
-                  <div className="contact-info-content">
-                    <h4>Phone</h4>
-                    <p>571-457-2321</p>
-                  </div>
-                </div>
-
-                <div className="contact-info-item">
-                  <div className="contact-info-icon">
-                    <i className="fas fa-envelope"></i>
+                    <i>
+                      <MarkunreadIcon />
+                    </i>
                   </div>
 
                   <div className="contact-info-content">
@@ -74,6 +73,16 @@ const Contact = () => {
                   </div>
 
                   <div className="input-box">
+                    <input type="product" required />
+                    <span>What Product You Want?</span>
+                  </div>
+
+                  <div className="input-box">
+                    <input type="material" required />
+                    <span>Material You Intrested to be Used?</span>
+                  </div>
+
+                  <div className="input-box">
                     <textarea required></textarea>
                     <span>Type your Message...</span>
                   </div>
@@ -87,7 +96,7 @@ const Contact = () => {
           </div>
         </section>
       </main>
-    </section>
+    </div>
   );
 };
 
