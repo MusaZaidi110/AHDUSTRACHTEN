@@ -1,0 +1,97 @@
+.About {
+  position: relative;
+  min-height: fit-content;
+  overflow: hidden;
+  width: 100vw;
+  background-color: #333;
+}
+
+.loopElement {
+  margin-top: 2rem;
+}
+
+.aboutContent {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.aboutContent .borderLine .upline {
+  width: 90%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  max-width: 1050px;
+  gap: 40px;
+  margin-top: 3rem;
+}
+
+.aboutContent .content .left ul {
+  list-style: none;
+}
+.aboutContent .content .left ul li {
+  color: #fff;
+}
+.headingwithIcon {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.aboutContent .content .left ul span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.aboutContent .content .right img {
+  width: 100%;
+  height: 400px;
+}
+
+.workContent {
+  margin-top: 5rem;
+}
+.workContent .content {
+  gap: 5rem;
+}
+.workContent .content .right ul {
+  list-style: none;
+}
+.workContent .content .right ul li {
+  color: #fff;
+}
+.workContent .content .right ul span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.workContent .left {
+  position: relative;
+  display: inline-block;
+}
+.workContent .left img {
+  width: 400px;
+  height: 480px;
+  position: relative;
+  z-index: 1; /* Places the image above the border */
+  transition: transform 0.3s ease;
+}
+.workContent .left::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Creates a 10px gap above the image */
+  left: -10px; /* Creates a 10px gap to the left of the image */
+  right: -10px; /* Creates a 10px gap to the right of the image */
+  bottom: -10px; /* Creates a 10px gap below the image */
+  border: 2px solid #fff; /* Customize the border color and width */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  transition: transform 0.3s ease; /* Animates the border on hover */
+  z-index: 0; /* Places the border below the image */
+}
+.left:hover::before {
+  transform: scale(1.1); /* Animates the border to grow slightly */
+}
+
+.left:hover img {
+  transform: scale(1.05); /* Adds a slight zoom effect to the image */
+}

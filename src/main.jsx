@@ -3,8 +3,9 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./Pages/HomePage.jsx";
+import AboutPage from "./Pages/About/AboutPage.jsx";
 import ContactPage from "./Pages/ContactUs/ContactPage.jsx";
-import GalleryPage from "./Pages/GalleryPage.jsx";
+import GalleryPage from "./Pages/Gallery/GalleryPage.jsx";
 import Layout from "./Pages/Layout.jsx";
 import ProductDetail from "./Pages/ProductDetails/ProductDetails.jsx";
 
@@ -22,6 +23,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <ProductDetail />
+      </Layout>
+    ),
+  },
+  {
+    path: "/About",
+    element: (
+      <Layout>
+        <AboutPage />
       </Layout>
     ),
   },

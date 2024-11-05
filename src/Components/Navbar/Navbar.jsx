@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import Logo from "../../assets/Logo/logo white png.png";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,7 +16,9 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <div className="navbar-logo">
-          <Link to="/">AHDUSTRACHTEN</Link>
+          <Link to="/">
+            <img src={Logo} alt="Logo Img" />
+          </Link>
         </div>
 
         {/* Hamburger menu for mobile */}
@@ -36,10 +39,10 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/Products"
+              to="/About"
               className={({ isActive }) => (isActive ? "active-link" : "")}
             >
-              Products
+              About Us
             </NavLink>
           </li>
           <li>

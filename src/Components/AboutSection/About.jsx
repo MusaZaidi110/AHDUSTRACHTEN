@@ -10,7 +10,13 @@ import product7 from "../../assets/Product/Product-7.webp";
 import product8 from "../../assets/Product/Product-8.webp";
 import product9 from "../../assets/Product/Product-9.webp";
 import product10 from "../../assets/Product/Product-10.webp";
-import Icon from "../../assets/bulletIcon.png";
+
+import HandshakeIcon from "@mui/icons-material/Handshake";
+import BuildIcon from "@mui/icons-material/Build";
+import UpdateIcon from "@mui/icons-material/Update";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import GppGoodIcon from "@mui/icons-material/GppGood";
+
 const About = () => {
   const images = [
     product1,
@@ -37,61 +43,60 @@ const About = () => {
 
         <div className="contentSection">
           <div className="contentList">
-            <ul>
+            <ul className="features-list">
               <li>
-                <img src={Icon} alt="Bullet Icon" />
-                <div className="text">
-                  <span>100% Authentic Leather:</span> <br />
-                  Every product we offer is crafted from premium, genuine
-                  leather, chosen for durability, richness, and timeless appeal.
+                <div className="headingIcon">
+                  <HandshakeIcon
+                    color="secondary"
+                    style={{ fontSize: "1.5rem" }}
+                  />
+                  Welcome to AhdusTrachten! Based in Pakistan, we specialize in
+                  exquisite, handmade leather products that reflect our rich
+                  heritage and commitment to quality.
                 </div>
               </li>
 
               <li>
-                <img src={Icon} alt="Bullet Icon" />
-                <div className="text">
-                  <span>Crafting Traditions:</span> <br />
-                  We specialize in Trachten, merging traditional design with
-                  high-quality materials, making each piece a blend of heritage
-                  and fashion.
+                <div className="headingIcon">
+                  <BuildIcon color="secondary" style={{ fontSize: "1.5rem" }} />
+                  Each piece tells a story crafted by our skilled artisans using
+                  100% pure leather, ensuring durability and timeless style in
+                  every product.
                 </div>
               </li>
 
               <li>
-                <img src={Icon} alt="Bullet Icon" />
-                <div className="text">
-                  <span>Handcrafted Excellence:</span> <br />
-                  Our skilled artisans pour dedication into every stitch,
-                  ensuring that each product meets the highest standards of
-                  leather craftsmanship.
+                <div className="headingIcon">
+                  <UpdateIcon
+                    color="secondary"
+                    style={{ fontSize: "1.5rem" }}
+                  />
+                  Our customer-centric approach fosters personalized
+                  relationships, guiding you through the design and production
+                  process to bring your vision to life.
                 </div>
               </li>
 
               <li>
-                <img src={Icon} alt="Bullet Icon" />
-                <div className="text">
-                  <span>Uncompromising Quality:</span> <br />
-                  With us, quality isn’t a goal; it’s a standard. Our products
-                  are built to last, providing a luxury that only gets better
-                  with time.
+                <div className="headingIcon">
+                  <LocalShippingIcon
+                    color="secondary"
+                    style={{ fontSize: "1.5rem" }}
+                  />
+                  We prioritize timely delivery and secure shipping, ensuring a
+                  seamless experience from start to finish.
                 </div>
               </li>
 
               <li>
-                <img src={Icon} alt="Bullet Icon" />
-                <div className="text">
-                  <span>Modern Meets Classic:</span> <br />
-                  Our products honor traditional craftsmanship while fitting
-                  effortlessly into the modern wardrobe.
-                </div>
-              </li>
-
-              <li>
-                <img src={Icon} alt="Bullet Icon" />
-                <div className="text">
-                  <span>Built to Last Generations:</span> <br />
-                  Each piece is made not just for today but to be cherished,
-                  shared, and remembered for years.
+                <div className="headingIcon">
+                  <GppGoodIcon
+                    color="secondary"
+                    style={{ fontSize: "1.5rem" }}
+                  />
+                  Join us in celebrating the beauty of handmade leather
+                  products—explore our collection and find the perfect blend of
+                  tradition and modern elegance.
                 </div>
               </li>
             </ul>

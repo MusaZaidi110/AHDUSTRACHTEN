@@ -21,15 +21,6 @@
 .contentList ul {
   color: #fff;
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px 40px; /* Adjust spacing between items */
-}
-
-.contentList ul li {
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
 .contentList ul li .text span {
@@ -42,11 +33,9 @@
   text-wrap: balance;
   text-align: left;
 }
-
-.contentList ul li img {
-  width: 40px;
+.headingIcon {
+  margin-top: 12px;
 }
-
 .rotator {
   width: 50%;
 }

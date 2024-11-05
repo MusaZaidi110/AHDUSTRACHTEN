@@ -6,10 +6,10 @@ export const CollectionCard = ({ img, title, paragraph, productId }) => {
     <>
       <div className="collectionCard">
         <img src={img} alt={title} />
-        <div className="content">
+        <div className="contentCard">
           <h2>{title}</h2>
           <p>{paragraph}</p>
-          <Link to={`/Products/${productId}`}>more details</Link>
+          <Link to={`/Products/${productId}`}>check Details...</Link>
         </div>
       </div>
     </>

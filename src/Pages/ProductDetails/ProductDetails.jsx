@@ -52,7 +52,7 @@ const ProductDetail = () => {
           </p>
         </div>
       </div>
-      <div className="content">
+      <div className="contentProduct">
         <h1>{product.title}</h1>
         <p>{product.description}</p>
       </div>

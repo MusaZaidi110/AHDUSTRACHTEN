@@ -39,7 +39,7 @@
   line-height: 1;
   max-width: 800px;
   margin-top: 7rem;
-  color: #333;
+  color: #fff;
 }
 
 .roundImg {
@@ -58,7 +58,6 @@
   height: 50px;
   border-radius: 50%;
   margin-left: -16px;
-  background-color: pink;
   border: 3px solid #fff;
 }
 .roundImg ul li img {
@@ -72,7 +71,7 @@
 
 .roundImg .text {
   font-size: 14px;
-  color: #333;
+  color: #ffffffe2;
   margin-top: 10px;
 }
 
@@ -81,7 +80,7 @@
 }
 .roundImg .button .heroButton {
   background-color: #e3ba68e1 !important;
-  color: #333;
+  color: #fff;
   font-size: 15px;
   font-weight: 600;
 }
