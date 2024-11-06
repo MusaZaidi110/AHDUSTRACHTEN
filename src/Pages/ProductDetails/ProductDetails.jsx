@@ -55,7 +55,7 @@ const ProductDetail = () => {
       <div className="contentProduct">
         <h1>{product.title}</h1>
         <p>{product.description}</p>
-        <small style={{ color: "red" }}>
+        <small style={{ color: "red" }} className="noteRed">
           For personalized craftsmanship and endless possibilities, reach out to
           us! We specialize in all types of premium leathers and can bring any
           custom product vision to life. Let’s create something uniquely yours!

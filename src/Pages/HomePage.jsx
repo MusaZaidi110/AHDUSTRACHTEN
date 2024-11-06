@@ -4,6 +4,7 @@ import About from "../Components/AboutSection/About";
 import WhyUs from "../Components/WhyUs/WhyUs";
 import Collection from "../Components/Collection/Collection";
 import Process from "../Components/Process/Process";
+import Testimonials from "../Components/SwiperTestimonials/Testimonials";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <WhyUs />
       <Collection />
       <Process />
+      <Testimonials />
     </div>
   );
 };
