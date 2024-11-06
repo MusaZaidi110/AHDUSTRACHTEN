@@ -1,16 +1,24 @@
 import React from "react";
 
 import "./Collection.css";
-import img1 from "../../assets/Making/Making-Parts-1.webp";
-import img2 from "../../assets/Making/Making-Parts-3.webp";
-import img3 from "../../assets/Product/Product-Leather-1.webp";
-import img4 from "../../assets/Product/Product-1.webp";
+import img1 from "../../assets/Product/buffaloleather.webp";
+import img2 from "../../assets/Product/GoatLeather.jpg";
+import img3 from "../../assets/Product/cowLeather.jfif";
+import img4 from "../../assets/Product/cowVelvety.jfif";
+
+import note from "../../assets/Note.png";
 import { CollectionCard } from "./CollectionCard";
+import { Link } from "react-router-dom";
 
 const Collection = () => {
   return (
     <>
       <section className="collection">
+        <img src={note} alt="Note" className="noteImg" />
+        <Link to={"/Contact"} className="noteText">
+          Contact for <br /> Customization
+        </Link>
+
         <div className="title">Our Products</div>
         <div className="mainTitle">Our Top Collections</div>
         <div className="borderLine">

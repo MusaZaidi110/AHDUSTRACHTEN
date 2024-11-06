@@ -1,10 +1,10 @@
 import React from "react";
 import "./ProductDetails.css";
 import { useParams, Link } from "react-router-dom";
-import img1 from "../../assets/Making/Making-Parts-1.webp";
-import img2 from "../../assets/Making/Making-Parts-3.webp";
-import img3 from "../../assets/Product/Product-Leather-1.webp";
-import img4 from "../../assets/Product/Product-1.webp";
+import img1 from "../../assets/Product/buffaloleather.webp";
+import img2 from "../../assets/Product/GoatLeather.jpg";
+import img3 from "../../assets/Product/cowLeather.jfif";
+import img4 from "../../assets/Product/cowVelvety.jfif";
 
 const productData = {
   1: {
@@ -55,6 +55,11 @@ const ProductDetail = () => {
       <div className="contentProduct">
         <h1>{product.title}</h1>
         <p>{product.description}</p>
+        <small style={{ color: "red" }}>
+          For personalized craftsmanship and endless possibilities, reach out to
+          us! We specialize in all types of premium leathers and can bring any
+          custom product vision to life. Let’s create something uniquely yours!
+        </small>
       </div>
     </section>
   );

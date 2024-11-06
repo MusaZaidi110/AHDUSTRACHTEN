@@ -19,8 +19,12 @@
   margin-top: 24px;
   border-radius: 10px;
   overflow-x: auto;
-  height: 520px;
+  height: 400px;
   position: relative;
+  background-image: url("../../assets/ProcessIcons/Vector2.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: calc(100% - 40px) calc(100% - 40px);
 }
 
 .process-step {
@@ -35,104 +39,84 @@
   border-radius: 8px;
   text-align: center;
 }
+
+.process-step img {
+  width: 70%;
+  height: 70%;
+  margin-bottom: 8px;
+}
+.process-step h1 {
+  font-size: 12px;
+}
+
 .process-step:first-child {
   position: absolute;
-  top: 10px;
+  bottom: 175px;
   left: 10px;
 }
 .process-step:nth-child(2) {
   position: absolute;
-  top: 60px;
-  left: 280px;
+  top: 20px;
+  left: 240px;
 }
 .process-step:nth-child(3) {
   position: absolute;
-  top: 110px;
-  left: 550px;
+  top: 200px;
+  left: 40%;
 }
 .process-step:nth-child(4) {
   position: absolute;
-  top: 143px;
-  right: 19px;
+  bottom: 25px;
+  right: 250px;
 }
 .process-step:nth-child(5) {
   position: absolute;
-  top: 265px;
-  left: 14%;
+  top: 12px;
+  right: 270px;
 }
-.process-step:nth-child(6) {
-  position: absolute;
-  top: 319px;
-  left: 42%;
-}
+
 .process-step:last-child {
   position: absolute;
-  top: 361px;
-  right: 15%;
+  bottom: 222px;
+  right: 5px;
 }
 
-.process-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.dashed-line {
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 120px;
-  height: 2px;
-  border-top: 2px dashed #ffffff;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-.process-step:nth-child(4) .dashed-line {
-  display: none;
-}
-
-.process-step:last-child .dashed-line {
-  display: none;
-}
-
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
   .process {
     padding: 2rem;
   }
   .process-flow {
-    height: 620px;
+    height: 570px;
   }
-  .dashed-line {
-    display: none;
+
+  .process-step:first-child {
+    position: absolute;
+    bottom: 415px;
+    left: 20px;
   }
   .process-step:nth-child(2) {
     position: absolute;
     top: 60px;
-    left: 168px;
+    left: 190px;
   }
   .process-step:nth-child(3) {
     position: absolute;
-    top: 170px;
-    left: 10px;
+    top: 195px;
+    left: 20px;
   }
   .process-step:nth-child(4) {
     position: absolute;
     top: 240px;
-    left: 168px;
+    left: 190px;
   }
   .process-step:nth-child(5) {
     position: absolute;
-    top: 320px;
-    left: 10px;
-  }
-  .process-step:nth-child(6) {
-    position: absolute;
-    top: 410px;
-    left: 168px;
+    top: 375px;
+    left: 20px;
   }
   .process-step:last-child {
     position: absolute;
-    top: 470px;
-    left: 10px;
+    top: 410px;
+    left: 190px;
   }
 }
