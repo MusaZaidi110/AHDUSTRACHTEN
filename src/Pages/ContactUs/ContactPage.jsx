@@ -13,14 +13,11 @@ const Contact = () => {
             <div className="container">
               <h2>Contact Us</h2>
               <p>
-                We value your feedback and inquiries! If you have any questions,
-                comments, or need assistance, please don't hesitate to reach
-                out. Our dedicated team is here to help you with any information
-                you may need regarding our products, services, or your order. We
-                strive to respond to all messages promptly, ensuring you have a
-                seamless experience with us. Whether you're seeking more details
-                about our offerings or have specific concerns, we're just a
-                message away!
+                We warmly welcome you to connect with us! Your feedback is
+                valued, and our team is here to assist with any questions,
+                orders, or custom requests, from material choices to unique
+                designs. Don't hesitate to reach out — we're just a message
+                away, ready to make your vision a reality!
               </p>
             </div>
           </div>

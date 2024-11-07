@@ -6,6 +6,9 @@ export const CollectionCard = ({ img, title, paragraph, productId }) => {
     <>
       <div className="collectionCard">
         <img src={img} alt={title} />
+        <Link to="/Contact">
+          <div className="overlay">Customize Design</div>
+        </Link>
         <div className="contentCard">
           <h2>{title}</h2>
           <p>{paragraph}</p>

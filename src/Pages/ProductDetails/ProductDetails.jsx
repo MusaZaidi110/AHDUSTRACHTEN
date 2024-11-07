@@ -21,9 +21,9 @@ const productData = {
   },
   3: {
     img: img3,
-    title: "Cow suede Beige",
+    title: "Goat suede Beige",
     description:
-      "Immerse yourself in the sophisticated warmth and soft texture of Cow Suede in Beige. Known for its plush, velvety surface, this luxurious suede offers both comfort and elegance. The beige hue lends a versatile, neutral tone that complements a wide range of styles, adding subtle warmth and refinement to any piece. With a uniquely soft and supple finish, Cow Suede feels exceptional to the touch, ideal for creating garments and accessories that exude sophistication. Durable and resilient, it’s crafted to maintain its look and feel over time, ensuring long-lasting beauty. Cow Suede Beige is perfect for those who seek a touch of understated luxury in their wardrobe, from jackets to bags and footwear, seamlessly blending style with comfort and timeless appeal.",
+      "Immerse yourself in the sophisticated warmth and soft texture of Goat Suede in Beige. Known for its plush, velvety surface, this luxurious suede offers both comfort and elegance. The beige hue lends a versatile, neutral tone that complements a wide range of styles, adding subtle warmth and refinement to any piece. With a uniquely soft and supple finish, Goat Suede feels exceptional to the touch, ideal for creating garments and accessories that exude sophistication. Durable and resilient, it’s crafted to maintain its look and feel over time, ensuring long-lasting beauty. Goat Suede Beige is perfect for those who seek a touch of understated luxury in their wardrobe, from jackets to bags and footwear, seamlessly blending style with comfort and timeless appeal.",
   },
   4: {
     img: img4,
@@ -55,7 +55,7 @@ const ProductDetail = () => {
       <div className="contentProduct">
         <h1>{product.title}</h1>
         <p>{product.description}</p>
-        <small style={{ color: "red" }} className="noteRed">
+        <small className="noteRed">
           For personalized craftsmanship and endless possibilities, reach out to
           us! We specialize in all types of premium leathers and can bring any
           custom product vision to life. Let’s create something uniquely yours!

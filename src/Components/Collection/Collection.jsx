@@ -6,19 +6,12 @@ import img2 from "../../assets/Product/GoatLeather.jpg";
 import img3 from "../../assets/Product/cowLeather.jfif";
 import img4 from "../../assets/Product/cowVelvety.jfif";
 
-import note from "../../assets/Note.png";
 import { CollectionCard } from "./CollectionCard";
-import { Link } from "react-router-dom";
 
 const Collection = () => {
   return (
     <>
       <section className="collection">
-        <img src={note} alt="Note" className="noteImg" />
-        <Link to={"/Contact"} className="noteText">
-          Contact for <br /> Customization
-        </Link>
-
         <div className="title">Our Products</div>
         <div className="mainTitle">Our Top Collections</div>
         <div className="borderLine">
@@ -47,8 +40,8 @@ const Collection = () => {
 
           <CollectionCard
             img={img3}
-            title="Cow suede Beige"
-            paragraph="Discover the plush feel and refined look of cow suede in beige,
+            title="Goat suede Beige"
+            paragraph="Discover the plush feel and refined look of goat suede in beige,
                 offering a soft, velvety texture that adds warmth and
                 sophistication to any piece."
             productId={3}

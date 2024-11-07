@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./Pages/HomePage.jsx";
 import AboutPage from "./Pages/About/AboutPage.jsx";
 import ContactPage from "./Pages/ContactUs/ContactPage.jsx";
-import GalleryPage from "./Pages/Gallery/GalleryPage.jsx";
+import ProductPage from "./Pages/Product/ProductPage.jsx";
 import Layout from "./Pages/Layout.jsx";
 import ProductDetail from "./Pages/ProductDetails/ProductDetails.jsx";
 
@@ -43,10 +43,10 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Gallery",
+    path: "/Product",
     element: (
       <Layout>
-        <GalleryPage />
+        <ProductPage />
       </Layout>
     ),
   },

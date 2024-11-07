@@ -49,8 +49,21 @@
 }
 
 .noteRed {
-  animation: blink 1s infinite;
+  color: red;
+  animation: blink 2s infinite;
+  line-height: 1px;
 }
+
 .noteRed:hover {
   animation: none;
+}
+@keyframes blink {
+  0%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
 }
