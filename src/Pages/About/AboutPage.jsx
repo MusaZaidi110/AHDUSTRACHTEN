@@ -37,7 +37,9 @@ const AboutPage = () => {
                 <li>
                   <div className="headingwithIcon">
                     <ListItemIcon sx={{ minWidth: 40 }}>
-                      <PrecisionManufacturingIcon color="primary" />
+                      <PrecisionManufacturingIcon
+                        style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                      />
                     </ListItemIcon>
                     <span>Handcrafted Excellence:</span>
                   </div>
@@ -48,7 +50,9 @@ const AboutPage = () => {
                 <li>
                   <div className="headingwithIcon">
                     <ListItemIcon sx={{ minWidth: 40 }}>
-                      <VerifiedIcon color="primary" />
+                      <VerifiedIcon
+                        style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                      />
                     </ListItemIcon>
                     <span>100% Pure Leather:</span>
                   </div>
@@ -59,7 +63,9 @@ const AboutPage = () => {
                 <li>
                   <div className="headingwithIcon">
                     <ListItemIcon sx={{ minWidth: 40 }}>
-                      <FlagIcon color="primary" />
+                      <FlagIcon
+                        style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                      />
                     </ListItemIcon>
                     <span>Proudly Made in Pakistan:</span>
                   </div>
@@ -70,7 +76,9 @@ const AboutPage = () => {
                 <li>
                   <div className="headingwithIcon">
                     <ListItemIcon sx={{ minWidth: 40 }}>
-                      <PublicIcon color="primary" />
+                      <PublicIcon
+                        style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                      />
                     </ListItemIcon>
                     <span>Global Export Reach:</span>
                   </div>
@@ -81,7 +89,9 @@ const AboutPage = () => {
                 <li>
                   <div className="headingwithIcon">
                     <ListItemIcon sx={{ minWidth: 40 }}>
-                      <GradeIcon color="primary" />
+                      <GradeIcon
+                        style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                      />
                     </ListItemIcon>
                     <span>Quality-Centric Approach:</span>
                   </div>
@@ -112,7 +122,9 @@ const AboutPage = () => {
                   <li>
                     <div className="headingwithIcon">
                       <ListItemIcon sx={{ minWidth: 40 }}>
-                        <HandshakeIcon color="primary" />
+                        <HandshakeIcon
+                          style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                        />
                       </ListItemIcon>
                       <span>Personalized Deal-Making</span>
                     </div>
@@ -124,7 +136,9 @@ const AboutPage = () => {
                   <li>
                     <div className="headingwithIcon">
                       <ListItemIcon sx={{ minWidth: 40 }}>
-                        <BuildIcon color="primary" />
+                        <BuildIcon
+                          style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                        />
                       </ListItemIcon>
                       <span>Tailored Production Process</span>
                     </div>
@@ -135,7 +149,9 @@ const AboutPage = () => {
                   <li>
                     <div className="headingwithIcon">
                       <ListItemIcon sx={{ minWidth: 40 }}>
-                        <UpdateIcon color="primary" />
+                        <UpdateIcon
+                          style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                        />
                       </ListItemIcon>
                       <span>Ongoing Progress Updates</span>
                     </div>
@@ -147,7 +163,9 @@ const AboutPage = () => {
                   <li>
                     <div className="headingwithIcon">
                       <ListItemIcon sx={{ minWidth: 40 }}>
-                        <LocalShippingIcon color="primary" />
+                        <LocalShippingIcon
+                          style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                        />
                       </ListItemIcon>
                       <span>Secure and Reliable Delivery</span>
                     </div>
@@ -159,7 +177,9 @@ const AboutPage = () => {
                   <li>
                     <div className="headingwithIcon">
                       <ListItemIcon sx={{ minWidth: 40 }}>
-                        <GppGoodIcon color="primary" />
+                        <GppGoodIcon
+                          style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                        />
                       </ListItemIcon>
                       <span>Commitment to Quality and Timeliness</span>
                     </div>

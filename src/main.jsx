@@ -7,7 +7,6 @@ import AboutPage from "./Pages/About/AboutPage.jsx";
 import ContactPage from "./Pages/ContactUs/ContactPage.jsx";
 import ProductPage from "./Pages/Product/ProductPage.jsx";
 import Layout from "./Pages/Layout.jsx";
-import ProductDetail from "./Pages/ProductDetails/ProductDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,14 +14,6 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <HomePage />
-      </Layout>
-    ),
-  },
-  {
-    path: "/Products/:id",
-    element: (
-      <Layout>
-        <ProductDetail />
       </Layout>
     ),
   },

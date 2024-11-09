@@ -47,8 +47,7 @@ const About = () => {
               <li>
                 <div className="headingIcon">
                   <HandshakeIcon
-                    color="secondary"
-                    style={{ fontSize: "1.5rem" }}
+                    style={{ fontSize: "1.5rem", color: "#bab86c" }}
                   />
                   Welcome to AhdusTrachten! Based in Pakistan, we specialize in
                   exquisite, handmade leather products that reflect our rich
@@ -58,7 +57,7 @@ const About = () => {
 
               <li>
                 <div className="headingIcon">
-                  <BuildIcon color="secondary" style={{ fontSize: "1.5rem" }} />
+                  <BuildIcon style={{ fontSize: "1.5rem", color: "#bab86c" }} />
                   Each piece tells a story crafted by our skilled artisans using
                   100% pure leather, ensuring durability and timeless style in
                   every product.
@@ -68,8 +67,7 @@ const About = () => {
               <li>
                 <div className="headingIcon">
                   <UpdateIcon
-                    color="secondary"
-                    style={{ fontSize: "1.5rem" }}
+                    style={{ fontSize: "1.5rem", color: "#bab86c" }}
                   />
                   Our customer-centric approach fosters personalized
                   relationships, guiding you through the design and production
@@ -80,8 +78,7 @@ const About = () => {
               <li>
                 <div className="headingIcon">
                   <LocalShippingIcon
-                    color="secondary"
-                    style={{ fontSize: "1.5rem" }}
+                    style={{ fontSize: "1.5rem", color: "#bab86c" }}
                   />
                   We prioritize timely delivery and secure shipping, ensuring a
                   seamless experience from start to finish.
@@ -91,8 +88,7 @@ const About = () => {
               <li>
                 <div className="headingIcon">
                   <GppGoodIcon
-                    color="secondary"
-                    style={{ fontSize: "1.5rem" }}
+                    style={{ fontSize: "1.5rem", color: "#bab86c" }}
                   />
                   Join us in celebrating the beauty of handmade leather
                   products—explore our collection and find the perfect blend of

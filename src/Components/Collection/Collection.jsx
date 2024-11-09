@@ -26,7 +26,6 @@ const Collection = () => {
             paragraph="Discover the strength and style of authentic buffalo leather,
             crafted for lasting durability and showcasing its unique, rugged
             texture."
-            productId={1}
           />
 
           <CollectionCard
@@ -35,7 +34,6 @@ const Collection = () => {
             paragraph="Embrace the softness and sophistication of regular goat skin in
                 beige, designed for comfort with a refined, natural texture that
                 brings elegance to every piece."
-            productId={2}
           />
 
           <CollectionCard
@@ -44,7 +42,6 @@ const Collection = () => {
             paragraph="Discover the plush feel and refined look of goat suede in beige,
                 offering a soft, velvety texture that adds warmth and
                 sophistication to any piece."
-            productId={3}
           />
 
           <CollectionCard
@@ -52,7 +49,6 @@ const Collection = () => {
             title="Velvety Cow Suede"
             paragraph="Experience the luxurious softness of velvety cow suede, ideal
                 for pieces with a rich texture and smooth, refined finish."
-            productId={4}
           />
         </div>
       </section>

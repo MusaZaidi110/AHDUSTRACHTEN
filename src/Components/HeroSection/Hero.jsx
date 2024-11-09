@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { Link } from "react-router-dom";
-import MainVideo from "../../assets/Machine/Machine-Main.webm";
+import MainVideo from "../../assets/Machine/HeroBackVideo.mp4";
 import img1 from "../../assets/Product/Product-1.webp";
 import img2 from "../../assets/Product/Product-2.webp";
 import img3 from "../../assets/Product/Product-3.webp";

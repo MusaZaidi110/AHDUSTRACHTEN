@@ -97,9 +97,17 @@
 }
 
 @media screen and (max-width: 678px) {
+  .aboutContent {
+    max-width: 1050px;
+    margin: 0 auto;
+    width: 90%;
+  }
   .content {
     flex-direction: column-reverse;
-    width: 90%;
     margin: 1rem auto;
+  }
+  .workContent .left img {
+    width: 340px;
+    height: 370px;
   }
 }

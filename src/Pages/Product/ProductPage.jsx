@@ -5,14 +5,10 @@ import img1 from "../../assets/Product/FullGrain.jpg";
 import img2 from "../../assets/Product/TopGrain.jpg";
 import img3 from "../../assets/Product/Vegetable-Tanned.jpg";
 import img4 from "../../assets/Product/SuedeGoat.jpg";
-import img5 from "../../assets/Product/BuffaloFullGrain.jfif";
-import img6 from "../../assets/Product/BuffaloTopGrain.jfif";
 import img7 from "../../assets/Product/BuffaloNubuck.jfif";
 import img8 from "../../assets/Product/BuffaloOilPull.jfif";
 import img9 from "../../assets/Product/CowFullGrain.jfif";
 import img10 from "../../assets/Product/CowTopGrain.jfif";
-import img11 from "../../assets/Product/CowHide.jfif";
-import img12 from "../../assets/Product/CowCorrectedGrain.jfif";
 import { ProductCard } from "./ProductCard";
 
 const ProductPage = () => {
@@ -52,18 +48,6 @@ const ProductPage = () => {
           />
 
           <ProductCard
-            img={img5}
-            title="Full-Grain Buffalo Leather"
-            paragraph="The highest quality buffalo leather, with the entire grain layer intact, known for its rugged texture, strength, and natural markings, offering a rustic and authentic look."
-          />
-
-          <ProductCard
-            img={img6}
-            title="Top-Grain Buffalo Leather"
-            paragraph="Slightly sanded to remove imperfections while maintaining the leather’s durability and flexibility. It has a smoother surface than full-grain, giving a refined appearance."
-          />
-
-          <ProductCard
             img={img7}
             title="Buffalo Nubuck Leather"
             paragraph="Top-grain buffalo leather buffed to create a soft, suede-like texture. This variant is durable and has a velvety feel, making it ideal for unique and high-end products."
@@ -85,18 +69,6 @@ const ProductPage = () => {
             img={img10}
             title="Top-Grain Cow Leather"
             paragraph=" Sanded to remove imperfections, giving it a smooth, consistent finish while retaining durability and flexibility. It’s commonly used for a refined, polished look."
-          />
-
-          <ProductCard
-            img={img11}
-            title="Cowhide Suedes"
-            paragraph=" Made from the inner layers of the hide, this variant has a soft, velvety surface. Though not as strong as full-grain, it offers a unique texture ideal for fashion accessories and footwear."
-          />
-
-          <ProductCard
-            img={img12}
-            title="Corrected-Grain Cow Leather"
-            paragraph=" Heavily sanded to remove natural imperfections and embossed with artificial grain patterns. It has a uniform, polished appearance, commonly used for products requiring a flawless finish."
           />
         </div>
       </section>
