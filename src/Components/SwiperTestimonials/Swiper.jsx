@@ -31,41 +31,8 @@ export default () => {
           <div className="headContainer">
             <img src={test1} alt="Customer 1 Picture" />
             <div className="nameContainer">
-              <div className="name">ABC Person</div>
-              <div className="company">XYZ Company</div>
-            </div>
-            <Stack spacing={1}>
-              <Rating
-                name="half-rating-read"
-                defaultValue={4}
-                precision={0.5}
-                readOnly
-              />
-            </Stack>
-          </div>
-
-          <hr />
-
-          <div className="TestimonialContent">
-            <h1>It was a Very Good Experience</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-              distinctio quas doloribus et quibusdam fuga repellendus, possimus
-              tempora, nemo architecto beatae cumque quisquam nobis delectus
-              fugiat ipsum optio labore? Iure tempore excepturi aspernatur quis
-              quam dolorem saepe qui magni cupiditate!
-            </p>
-          </div>
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <div className="testimonialContainer">
-          <div className="headContainer">
-            <img src={test2} alt="Customer 1 Picture" />
-            <div className="nameContainer">
-              <div className="name">ABC Person</div>
-              <div className="company">XYZ Company</div>
+              <div className="name">Sarah L.</div>
+              <div className="company">Germany</div>
             </div>
             <Stack spacing={1}>
               <Rating
@@ -80,13 +47,42 @@ export default () => {
           <hr />
 
           <div className="TestimonialContent">
-            <h1>It was a Very Good Experience</h1>
+            <h1>Quality You Can Count On – From Those Who Know Best</h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-              distinctio quas doloribus et quibusdam fuga repellendus, possimus
-              tempora, nemo architecto beatae cumque quisquam nobis delectus
-              fugiat ipsum optio labore? Iure tempore excepturi aspernatur quis
-              quam dolorem saepe qui magni cupiditate!
+              Absolutely thrilled with my purchase! The craftsmanship and
+              attention to detail are unmatched. It’s clear that quality is a
+              top priority. I’ll definitely be coming back for more!
+            </p>
+          </div>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div className="testimonialContainer">
+          <div className="headContainer">
+            <img src={test2} alt="Customer 1 Picture" />
+            <div className="nameContainer">
+              <div className="name">Michael T.</div>
+              <div className="company">Germany</div>
+            </div>
+            <Stack spacing={1}>
+              <Rating
+                name="half-rating-read"
+                defaultValue={4.5}
+                precision={0.5}
+                readOnly
+              />
+            </Stack>
+          </div>
+
+          <hr />
+
+          <div className="TestimonialContent">
+            <h1>Authenticity, Craftsmanship, and Satisfaction</h1>
+            <p>
+              Incredible experience from start to finish. The team was super
+              responsive to my customization requests, and the final product was
+              beyond my expectations. Highly recommended!
             </p>
           </div>
         </div>
@@ -97,13 +93,13 @@ export default () => {
           <div className="headContainer">
             <img src={test3} alt="Customer 1 Picture" />
             <div className="nameContainer">
-              <div className="name">ABC Person</div>
-              <div className="company">XYZ Company</div>
+              <div className="name">Lucas P.</div>
+              <div className="company">UK</div>
             </div>
             <Stack spacing={1}>
               <Rating
                 name="half-rating-read"
-                defaultValue={4}
+                defaultValue={5}
                 precision={0.5}
                 readOnly
               />
@@ -113,13 +109,11 @@ export default () => {
           <hr />
 
           <div className="TestimonialContent">
-            <h1>It was a Very Good Experience</h1>
+            <h1>Real Stories from Real Customers</h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-              distinctio quas doloribus et quibusdam fuga repellendus, possimus
-              tempora, nemo architecto beatae cumque quisquam nobis delectus
-              fugiat ipsum optio labore? Iure tempore excepturi aspernatur quis
-              quam dolorem saepe qui magni cupiditate!
+              I ordered a custom design, and it was perfect in every way. The
+              fit, the material, the details—everything was spot on. The
+              customer service was also fantastic!
             </p>
           </div>
         </div>

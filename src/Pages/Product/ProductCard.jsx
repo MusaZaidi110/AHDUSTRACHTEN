@@ -8,7 +8,7 @@ export const ProductCard = ({ img, title, paragraph }) => {
     <div className="collectionCard">
       <img src={img} alt={title} style={{ height: "270px" }} />
       <Link to="/Contact">
-        <div className="overlay">Customize Design</div>
+        <div className="overlay">Contact now for Customize Leather</div>
       </Link>
       <div className="contentCard">
         <h2>{title}</h2>
