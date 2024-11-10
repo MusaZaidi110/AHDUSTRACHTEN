@@ -20,6 +20,7 @@ export default () => {
     <Swiper
       modules={[Pagination, Virtual]}
       spaceBetween={50}
+      initialSlide={2}
       slidesPerView={3}
       centeredSlides={true}
       loop={true}
@@ -62,7 +63,7 @@ export default () => {
           <div className="headContainer">
             <img src={test2} alt="Customer 1 Picture" />
             <div className="nameContainer">
-              <div className="name">Michael T.</div>
+              <div className="name">Michael.</div>
               <div className="company">Germany</div>
             </div>
             <Stack spacing={1}>

@@ -65,7 +65,9 @@ const Navbar = () => {
 
         {/* Button (visible on web view only) */}
         <div className="navbar-button">
-          <Link className="btn">Get an Appointment</Link>
+          <Link className="btn" to={"/Contact"}>
+            Get an Appointment
+          </Link>
         </div>
       </div>
     </nav>
