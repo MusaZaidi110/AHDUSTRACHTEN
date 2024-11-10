@@ -13,7 +13,7 @@ import product10 from "../../assets/Product/Product-10.webp";
 
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import BuildIcon from "@mui/icons-material/Build";
-import UpdateIcon from "@mui/icons-material/Update";
+import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import GppGoodIcon from "@mui/icons-material/GppGood";
 
@@ -47,7 +47,11 @@ const About = () => {
               <li>
                 <div className="headingIcon">
                   <HandshakeIcon
-                    style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                    style={{
+                      fontSize: "20px",
+                      color: "#bab86c",
+                      marginTop: "5px",
+                    }}
                   />
                   Welcome to AhdusTrachten! Based in Pakistan, we specialize in
                   exquisite, handmade leather products that reflect our rich
@@ -57,7 +61,13 @@ const About = () => {
 
               <li>
                 <div className="headingIcon">
-                  <BuildIcon style={{ fontSize: "1.5rem", color: "#bab86c" }} />
+                  <BuildIcon
+                    style={{
+                      fontSize: "20px",
+                      color: "#bab86c",
+                      marginTop: "5px",
+                    }}
+                  />
                   Each piece tells a story crafted by our skilled artisans using
                   100% pure leather, ensuring durability and timeless style in
                   every product.
@@ -66,8 +76,12 @@ const About = () => {
 
               <li>
                 <div className="headingIcon">
-                  <UpdateIcon
-                    style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                  <AccessTimeFilledIcon
+                    style={{
+                      fontSize: "20px",
+                      color: "#bab86c",
+                      marginTop: "5px",
+                    }}
                   />
                   Our customer-centric approach fosters personalized
                   relationships, guiding you through the design and production
@@ -78,7 +92,11 @@ const About = () => {
               <li>
                 <div className="headingIcon">
                   <LocalShippingIcon
-                    style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                    style={{
+                      fontSize: "20px",
+                      color: "#bab86c",
+                      marginTop: "5px",
+                    }}
                   />
                   We prioritize timely delivery and secure shipping, ensuring a
                   seamless experience from start to finish.
@@ -88,7 +106,11 @@ const About = () => {
               <li>
                 <div className="headingIcon">
                   <GppGoodIcon
-                    style={{ fontSize: "1.5rem", color: "#bab86c" }}
+                    style={{
+                      fontSize: "20px",
+                      color: "#bab86c",
+                      marginTop: "5px",
+                    }}
                   />
                   Join us in celebrating the beauty of handmade leather
                   products—explore our collection and find the perfect blend of

@@ -12,7 +12,7 @@ const Collection = () => {
   return (
     <>
       <section className="collection">
-        <div className="title">Our Products</div>
+        <div className="title opposite">Our Products</div>
         <div className="mainTitle">Our Top Collections</div>
         <div className="borderLine">
           <div className="upline"></div>
@@ -31,7 +31,7 @@ const Collection = () => {
           <CollectionCard
             img={img2}
             title="Regular Goat Skin Beige"
-            paragraph="Embrace the softness and sophistication of regular goat skin in
+            paragraph="Embrace the softness of regular goat skin in 
                 beige, designed for comfort with a refined, natural texture that
                 brings elegance to every piece."
           />

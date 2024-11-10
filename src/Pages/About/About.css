@@ -31,7 +31,7 @@
   list-style: none;
 }
 .aboutContent .content .left ul li {
-  color: #fff;
+  color: #ffffff8c;
 }
 .headingwithIcon {
   display: flex;
@@ -41,6 +41,7 @@
 .aboutContent .content .left ul span {
   font-size: 20px;
   font-weight: 700;
+  color: #fff;
 }
 
 .aboutContent .content .right img {
@@ -58,11 +59,12 @@
   list-style: none;
 }
 .workContent .content .right ul li {
-  color: #fff;
+  color: #ffffff8c;
 }
 .workContent .content .right ul span {
   font-size: 20px;
   font-weight: 700;
+  color: #fff;
 }
 
 .workContent .left {

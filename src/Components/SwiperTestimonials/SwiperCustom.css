@@ -48,7 +48,9 @@
 }
 
 .TestimonialContent {
-  padding: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-inline: 0px;
 }
 .TestimonialContent h1 {
   font-size: 20px;

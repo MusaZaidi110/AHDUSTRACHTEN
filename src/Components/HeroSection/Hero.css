@@ -34,19 +34,21 @@
 }
 
 .hero-title {
-  font-size: 7rem;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 900;
   line-height: 1;
   max-width: 800px;
+  margin: 0 auto;
   margin-top: 7rem;
+  text-align: center;
   color: #fff;
 }
 
 .roundImg {
-  float: right;
   height: 200px;
   width: 400px;
-  margin-top: 3rem;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .roundImg ul {
@@ -54,11 +56,11 @@
   display: flex;
 }
 .roundImg ul li {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  margin-left: -16px;
-  border: 3px solid #fff;
+  margin-left: -14px;
+  border: 2px solid #fff;
 }
 .roundImg ul li img {
   width: 100%;
@@ -68,16 +70,20 @@
 .roundImg ul li:first-child {
   margin-left: 0;
 }
-
+.btnroundImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 1rem;
+}
 .roundImg .text {
   font-size: 14px;
   color: #ffffffe2;
   margin-top: 10px;
+  text-align: center;
 }
 
-.roundImg .button {
-  margin-top: 1rem;
-}
 .roundImg .button .heroButton {
   background-color: #bab86c !important;
   color: #fff;

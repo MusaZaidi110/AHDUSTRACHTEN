@@ -1,8 +1,5 @@
 .whyus {
   background-color: #333;
-  width: 100%;
-  min-height: 500px;
-  padding: 5rem;
 }
 .whyus .borderLine .upline {
   width: 100% !important;
@@ -25,8 +22,14 @@
 }
 .card p {
   margin-top: 10px;
+  color: #ffffff8c;
 }
 
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .bigBtn {
   display: block;
   margin-top: 50px;

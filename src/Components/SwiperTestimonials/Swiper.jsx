@@ -112,8 +112,9 @@ export default () => {
             <h1>Real Stories from Real Customers</h1>
             <p>
               I ordered a custom design, and it was perfect in every way. The
-              fit, the material, the details—everything was spot on. The
-              customer service was also fantastic!
+              fit, the material, the details. The customer service was also
+              fantastic! I highly recommend this brand to anyone looking for
+              quality and authenticity.
             </p>
           </div>
         </div>

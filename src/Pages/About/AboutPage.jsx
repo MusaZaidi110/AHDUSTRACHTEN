@@ -189,12 +189,11 @@ const AboutPage = () => {
                     products themselves.
                   </li>
                 </ul>
+                <a href="#" className="btn bigBtn">
+                  Let's connect with us
+                </a>
               </div>
             </div>
-
-            <a href="#" className="btn bigBtn">
-              Let's connect with us
-            </a>
           </div>
         </div>
       </section>

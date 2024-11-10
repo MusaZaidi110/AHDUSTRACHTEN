@@ -22,47 +22,48 @@ const Hero = () => {
       <div className="hero-content">
         <h1 className="hero-title">Beautiful analytics to grow smarter</h1>
         <div className="roundImg">
-          <div className="imgs">
-            <ul>
-              <li>
-                <img src={img1} alt="Image1" />
-              </li>
-              <li>
-                <img src={img2} alt="Image2" />
-              </li>
-              <li>
-                <img src={img3} alt="Image3" />
-              </li>
-              <li>
-                <img src={img4} alt="Image4" />
-              </li>
-              <li>
-                <img src={img5} alt="Image5" />
-              </li>
-              <li>
-                <img src={img6} alt="Image6" />
-              </li>
-              <li>
-                <img src={img7} alt="Image7" />
-              </li>
-              <li>
-                <img src={img8} alt="Image8" />
-              </li>
-              <li>
-                <img src={img9} alt="Image9" />
-              </li>
-              <li>
-                <img src={img10} alt="Image10" />
-              </li>
-            </ul>
-          </div>
           <div className="text">
-            Powerful, self-serve product and growth analytics to help you
-            convert, engage and retain more users. <br />
-            Trusted By over 4,000 startups.
+            Self-serve analytics to boost user conversion, engagement, and
+            retention. Trusted by 4,000+ startups.
           </div>
-          <div className="button">
-            <Link className="btn heroButton">start now</Link>
+          <div className="btnroundImg">
+            <div className="button">
+              <Link className="btn heroButton">start now</Link>
+            </div>
+            <div className="imgs">
+              <ul>
+                <li>
+                  <img src={img1} alt="Image1" />
+                </li>
+                <li>
+                  <img src={img2} alt="Image2" />
+                </li>
+                <li>
+                  <img src={img3} alt="Image3" />
+                </li>
+                <li>
+                  <img src={img4} alt="Image4" />
+                </li>
+                <li>
+                  <img src={img5} alt="Image5" />
+                </li>
+                <li>
+                  <img src={img6} alt="Image6" />
+                </li>
+                <li>
+                  <img src={img7} alt="Image7" />
+                </li>
+                <li>
+                  <img src={img8} alt="Image8" />
+                </li>
+                <li>
+                  <img src={img9} alt="Image9" />
+                </li>
+                <li>
+                  <img src={img10} alt="Image10" />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

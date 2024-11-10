@@ -33,8 +33,8 @@
 
 .navbar-logo a {
   display: block;
-  width: 130px;
-  height: 70px;
+  width: 120px;
+  height: 60px;
 }
 .navbar-logo img {
   width: 100%;
@@ -59,12 +59,13 @@
 .navbar-menu li a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navbar-menu li a:hover,
 .navbar-menu .active-link {
   color: #bab86c; /* Color for active link */
+  font-weight: bold;
 }
 
 /* Hamburger Menu for Mobile */

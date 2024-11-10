@@ -1,27 +1,28 @@
 .process {
   background-color: #333;
-  width: 100%;
-  min-height: 500px;
-  padding: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .process .borderLine .upline {
   width: 270% !important;
 }
+.process .processTitle,
+.process .processMaintitle {
+  margin-left: 5rem;
+}
 
 /* ProcessFlow.css */
-.process-flow {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.blackContainer {
   background-color: #1a1a1a;
-  padding: 20px;
   margin-top: 24px;
-  border-radius: 10px;
+  padding: 0rem 3rem;
+}
+.process-flow {
   overflow-x: auto;
-  height: 400px;
+  height: 450px;
   position: relative;
-  background-image: url("../../assets/ProcessIcons/Vector2.svg");
+  background-image: url("/src/assets/ProcessIcons/Vector2.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: calc(100% - 40px) calc(100% - 40px);
@@ -31,9 +32,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: #ffffff;
-  width: 150px;
-  height: 135px;
+  width: 135px;
+  height: 120px;
   padding: 10px;
   background-color: #333333;
   border-radius: 8px;
@@ -41,44 +43,45 @@
 }
 
 .process-step img {
-  width: 70%;
-  height: 70%;
-  margin-bottom: 8px;
+  width: 48%;
+  height: 48%;
+  margin-bottom: 6px;
 }
 .process-step h1 {
   font-size: 12px;
+  padding-inline: 8px;
 }
 
 .process-step:first-child {
   position: absolute;
-  bottom: 175px;
-  left: 10px;
+  bottom: 198px;
+  left: 0px;
 }
 .process-step:nth-child(2) {
   position: absolute;
-  top: 20px;
-  left: 240px;
+  top: 45px;
+  left: 300px;
 }
 .process-step:nth-child(3) {
   position: absolute;
-  top: 200px;
-  left: 40%;
+  top: 290px;
+  left: 49%;
 }
 .process-step:nth-child(4) {
   position: absolute;
-  bottom: 25px;
-  right: 250px;
+  bottom: 63%;
+  right: 228px;
 }
 .process-step:nth-child(5) {
   position: absolute;
-  top: 12px;
-  right: 270px;
+  top: 291px;
+  right: 70px;
 }
 
 .process-step:last-child {
   position: absolute;
-  bottom: 222px;
-  right: 5px;
+  bottom: 250px;
+  right: 0px;
 }
 
 @media screen and (max-width: 768px) {

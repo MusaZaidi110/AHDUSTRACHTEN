@@ -1,8 +1,5 @@
 .collection {
   background-color: #e8e8e8;
-  width: 100%;
-  min-height: 500px;
-  padding: 5rem;
 }
 
 .collection .mainTitle {
@@ -42,19 +39,19 @@
   border-radius: 10px 10px 0px 0;
 }
 .collectionCard .contentCard {
-  padding: 10px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
-  height: 150px;
+  height: 160px;
 }
 .collectionCard .contentCard h2 {
   font-size: 14px;
 }
 .collectionCard .contentCard p {
   font-size: 12px;
-  text-align: justify;
+  text-align: left;
+  margin-top: 8px;
   color: gray;
   display: block;
 }

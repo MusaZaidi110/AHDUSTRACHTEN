@@ -11,42 +11,45 @@ import Export from "../../assets/ProcessIcons/Export.png";
 
 const ProcessFlow = () => {
   return (
-    <section className="process">
-      <div className="title">Our Process</div>
-      <div className="mainTitle">Luxury Leather, Delivered</div>
+    <div className="process">
+      <div className="title processTitle">Our Process</div>
+      <div className="mainTitle processMaintitle">
+        Luxury Leather, Delivered
+      </div>
+      <div className="blackContainer">
+        <div className="process-flow">
+          <div className="process-step">
+            <img src={LeatherAquire} alt="LeatherAquire" />
+            <h1>1. Leather Aquire</h1>
+          </div>
 
-      <div className="process-flow">
-        <div className="process-step">
-          <img src={LeatherAquire} alt="LeatherAquire" />
-          <h1>1. Leather Aquire</h1>
-        </div>
+          <div className="process-step">
+            <img src={ChemicalCleaning} alt="ChemicalCleaning" />
+            <h1>2. Chemical Cleaning</h1>
+          </div>
 
-        <div className="process-step">
-          <img src={ChemicalCleaning} alt="ChemicalCleaning" />
-          <h1>2. Chemical Cleaning</h1>
-        </div>
+          <div className="process-step">
+            <img src={Emboidery} alt="Emboidery" />
+            <h1>3. Embroidery</h1>
+          </div>
 
-        <div className="process-step">
-          <img src={Emboidery} alt="Emboidery" />
-          <h1>3. Embroidery</h1>
-        </div>
+          <div className="process-step">
+            <img src={Stiching} alt="Stiching" />
+            <h1>4. Stiching</h1>
+          </div>
 
-        <div className="process-step">
-          <img src={Stiching} alt="Stiching" />
-          <h1>4. Stiching</h1>
-        </div>
+          <div className="process-step">
+            <img src={QualityCheck} alt="QualityCheck" />
+            <h1>5. Quality Check</h1>
+          </div>
 
-        <div className="process-step">
-          <img src={QualityCheck} alt="QualityCheck" />
-          <h1>5. Quality Check</h1>
-        </div>
-
-        <div className="process-step">
-          <img src={Export} alt="Export" />
-          <h1>6. Export </h1>
+          <div className="process-step">
+            <img src={Export} alt="Export" />
+            <h1>6. Export </h1>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

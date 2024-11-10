@@ -15,7 +15,7 @@ body {
 }
 
 .btn {
-  padding: 0.6rem 1.6rem;
+  padding: 8px 16px;
   background-color: #333;
   border: none;
   color: #fff;
@@ -30,9 +30,18 @@ body {
 
 .title {
   font-size: 14px;
-  padding: 4px 10px;
-  border: 1px solid gray;
-  color: gray;
+  padding: 6px 12px;
+  color: #333;
+  background-color: #fff;
+  max-width: fit-content;
+  border-radius: 30px;
+}
+
+.title.opposite {
+  font-size: 14px;
+  padding: 6px 12px;
+  color: #fff;
+  background-color: #333;
   max-width: fit-content;
   border-radius: 30px;
 }
@@ -52,7 +61,7 @@ body {
   background-color: #fff;
   height: 1px;
   width: 35%;
-  margin-top: -10px;
+  margin-top: 0px;
   position: relative;
 }
 .borderLine .upline::after {
@@ -70,6 +79,12 @@ body {
   background-color: #fff;
   height: 1px;
   width: 62%;
-  margin-top: 24px;
+  margin-top: 35px;
   margin-left: 34px;
+}
+
+section {
+  width: 100%;
+  min-height: 500px;
+  padding: 3rem 5rem;
 }
