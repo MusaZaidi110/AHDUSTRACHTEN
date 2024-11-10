@@ -28,7 +28,7 @@
 .collectionCard {
   display: flex;
   flex-direction: column;
-  width: 230px;
+  width: 260px;
   height: 400px;
   border-radius: 10px;
   background-color: #fff;

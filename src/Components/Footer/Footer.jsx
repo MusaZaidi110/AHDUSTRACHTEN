@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
+import Logo from "../../assets/Logo/logo white png.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailIcon from "@mui/icons-material/Mail";
@@ -13,35 +14,16 @@ const Footer = () => {
   return (
     <section className="FooterContainer">
       <footer className="footer">
-        <div className="waves">
-          <div className="wave" id="wave1"></div>
-          <div className="wave" id="wave2"></div>
-          <div className="wave" id="wave3"></div>
-          <div className="wave" id="wave4"></div>
+        <div className="Logo">
+          <div className="logoImg">
+            <img src={Logo} alt="Logo Image" />
+          </div>
         </div>
-        <ul className="social-icon">
-          <li className="social-icon__item">
-            <Link className="social-icon__link" to={`mailto:${email}`}>
-              <MailIcon />
-            </Link>
-          </li>
-          <li className="social-icon__item">
-            <Link className="social-icon__link" to="#">
-              <FacebookIcon />
-            </Link>
-          </li>
-          <li className="social-icon__item">
-            <Link className="social-icon__link" to="#">
-              <InstagramIcon />
-            </Link>
-          </li>
-          <li className="social-icon__item">
-            <Link className="social-icon__link" to="#">
-              <LinkedInIcon />
-            </Link>
-          </li>
-        </ul>
+
         <ul className="menu">
+          <li className="menu__item">
+            <h1>Website Links</h1>
+          </li>
           <li className="menu__item">
             <Link className="menu__link" to="/">
               Home
@@ -63,8 +45,40 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
-        <p>&copy;2024-25 Ahdus Trachten | All Rights Reserved</p>
+
+        <ul className="social-icon">
+          <li className="social-icon__item">
+            <h1>Social Links</h1>
+          </li>
+          <li className="social-icon__item">
+            <Link className="social-icon__link" to={`mailto:${email}`}>
+              <MailIcon />
+              <small>Email</small>
+            </Link>
+          </li>
+          <li className="social-icon__item">
+            <Link className="social-icon__link" to="#">
+              <FacebookIcon />
+              <small>Facebook</small>
+            </Link>
+          </li>
+          <li className="social-icon__item">
+            <Link className="social-icon__link" to="#">
+              <InstagramIcon />
+              <small>Instagram</small>
+            </Link>
+          </li>
+          <li className="social-icon__item">
+            <Link className="social-icon__link" to="#">
+              <LinkedInIcon />
+              <small>LinkedIn</small>
+            </Link>
+          </li>
+        </ul>
       </footer>
+      <div className="endText">
+        <p>&copy;2024-25 Ahdus Trachten | All Rights Reserved</p>
+      </div>
     </section>
   );
 };

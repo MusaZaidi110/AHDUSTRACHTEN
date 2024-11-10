@@ -91,6 +91,14 @@
   .process-flow {
     height: 570px;
   }
+  .process-flow {
+    background-image: url("../../assets/Logo/logo white png.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150% 80%;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+  }
 
   .process-step:first-child {
     position: absolute;
