@@ -69,4 +69,7 @@
     height: 390px;
     margin-top: 2rem;
   }
+  .products {
+    padding-inline: 2rem;
+  }
 }

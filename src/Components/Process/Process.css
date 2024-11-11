@@ -91,15 +91,16 @@
   .process-flow {
     height: 570px;
   }
-  .process-flow {
-    background-image: url("../../assets/Logo/logo white png.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 150% 80%;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-blend-mode: multiply;
+  .blackContainer {
+    padding: 0rem;
   }
-
+  .process-flow {
+    background-image: none;
+  }
+  .process .processTitle,
+  .process .processMaintitle {
+    margin-left: 0rem;
+  }
   .process-step:first-child {
     position: absolute;
     bottom: 415px;

@@ -10,6 +10,7 @@ import product7 from "../../assets/Product/Product-7.webp";
 import product8 from "../../assets/Product/Product-8.webp";
 import product9 from "../../assets/Product/Product-9.webp";
 import product10 from "../../assets/Product/Product-10.webp";
+import MockImg from "../../assets/Mobile_App_Screen_Mockup.png";
 
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import BuildIcon from "@mui/icons-material/Build";
@@ -119,7 +120,7 @@ const About = () => {
               </li>
             </ul>
           </div>
-          <div className="rotator">
+          {/* <div className="rotator">
             <div className="banner">
               <div className="slider" style={{ "--quantity": images.length }}>
                 {images.map((src, index) => (
@@ -133,6 +134,10 @@ const About = () => {
                 ))}
               </div>
             </div>
+          </div> */}
+
+          <div className="mockImg">
+            <img src={MockImg} alt="MockImg" />
           </div>
         </div>
       </section>
