@@ -1,0 +1,61 @@
+/* Orderdelivery Section */
+.Orderdelivery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: fit-content;
+    overflow: hidden;
+    width: 100vw;
+    margin-bottom: 2rem;
+  }
+  
+  .Orderdelivery-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .Orderdelivery-video video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+  }
+  
+  .Orderdelivery-content {
+    position: relative;
+    z-index: 1;
+    width: 85%;
+    height: 100%;
+  }
+  
+  .Orderdelivery-title {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 7rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  
+  @media (max-width: 820px) {
+    .Orderdelivery-content {
+      width: 92%;
+    }
+    .Orderdelivery-title {
+      font-size: 5rem;
+    }
+    .Orderdelivery .roundImg .text {
+      max-width: 100%;
+      margin-inline: auto;
+    }
+  }
+  
