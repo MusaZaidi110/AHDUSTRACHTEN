@@ -1,0 +1,134 @@
+.process {
+  background-color: #333;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.process .borderLine .upline {
+  width: 270% !important;
+}
+.process .processTitle,
+.process .processMaintitle {
+  margin-left: 5rem;
+}
+
+/* ProcessFlow.css */
+.blackContainer {
+  background-color: #1a1a1a;
+  margin-top: 24px;
+  padding: 0rem 3rem;
+}
+.process-flow {
+  overflow-x: auto;
+  height: 450px;
+  position: relative;
+  background-image: url("/src/assets/ProcessIcons/Vector2.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: calc(100% - 40px) calc(100% - 40px);
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  width: 135px;
+  height: 120px;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.process-step img {
+  width: 48%;
+  height: 48%;
+  margin-bottom: 6px;
+}
+.process-step h1 {
+  font-size: 12px;
+  padding-inline: 8px;
+}
+
+.process-step:first-child {
+  position: absolute;
+  bottom: 198px;
+  left: 0px;
+}
+.process-step:nth-child(2) {
+  position: absolute;
+  top: 45px;
+  left: 300px;
+}
+.process-step:nth-child(3) {
+  position: absolute;
+  top: 290px;
+  left: 49%;
+}
+.process-step:nth-child(4) {
+  position: absolute;
+  bottom: 63%;
+  right: 228px;
+}
+.process-step:nth-child(5) {
+  position: absolute;
+  top: 291px;
+  right: 70px;
+}
+
+.process-step:last-child {
+  position: absolute;
+  bottom: 250px;
+  right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .process {
+    padding: 2rem;
+  }
+  .process-flow {
+    height: 570px;
+  }
+  .blackContainer {
+    padding: 0rem;
+  }
+  .process-flow {
+    background-image: none;
+  }
+  .process .processTitle,
+  .process .processMaintitle {
+    margin-left: 0rem;
+  }
+  .process-step:first-child {
+    position: absolute;
+    bottom: 415px;
+    left: 20px;
+  }
+  .process-step:nth-child(2) {
+    position: absolute;
+    top: 60px;
+    left: 190px;
+  }
+  .process-step:nth-child(3) {
+    position: absolute;
+    top: 195px;
+    left: 20px;
+  }
+  .process-step:nth-child(4) {
+    position: absolute;
+    top: 240px;
+    left: 190px;
+  }
+  .process-step:nth-child(5) {
+    position: absolute;
+    top: 375px;
+    left: 20px;
+  }
+  .process-step:last-child {
+    position: absolute;
+    top: 410px;
+    left: 190px;
+  }
+}
