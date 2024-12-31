@@ -22,6 +22,8 @@ body {
   cursor: pointer;
   border-radius: 30px;
   text-decoration: none;
+  display: block;
+    width: fit-content;
 }
 .btn:hover {
   background-color: #bab86c;
@@ -83,8 +85,3 @@ body {
   margin-left: 34px;
 }
 
-section {
-  width: 100%;
-  min-height: 500px;
-  padding: 3rem 5rem;
-}

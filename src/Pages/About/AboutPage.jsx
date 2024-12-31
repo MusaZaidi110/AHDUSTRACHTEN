@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import LoopElement from "../../Components/InfinityLoop/LoopElement.jsx";
 import LogoImg from "../../assets/Logo/logo white png.png";
 import menProduct from "../../assets/Product/Product-5.webp";
 import ListItemIcon from "@mui/material/ListItemIcon";
@@ -14,15 +13,12 @@ import BuildIcon from "@mui/icons-material/Build";
 import UpdateIcon from "@mui/icons-material/Update";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import GppGoodIcon from "@mui/icons-material/GppGood";
+import WhyUsImages from "../../Components/WhyUsImages/WhyUsImages.jsx";
 
 const AboutPage = () => {
   return (
     <>
       <section className="About">
-        <div className="loopElement">
-          <LoopElement />
-        </div>
-
         <div className="aboutContent">
           <div className="title">About US</div>
           <div className="mainTitle">Our INTRODUCTION </div>
@@ -197,6 +193,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+      <WhyUsImages />
     </>
   );
 };

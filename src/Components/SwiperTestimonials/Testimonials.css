@@ -1,7 +1,8 @@
 .testimonials {
   width: 100%;
-  min-height: 500px;
   position: relative;
+  min-height: 500px;
+  padding: 3rem 5rem;
 }
 .titleHeader {
   /* padding-left: 5rem; */

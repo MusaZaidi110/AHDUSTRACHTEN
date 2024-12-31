@@ -1,5 +1,8 @@
 .whyus {
   background-color: #333;
+  width: 100%;
+  min-height: 500px;
+  padding: 3rem 5rem;
 }
 .whyus .borderLine .upline {
   width: 100% !important;

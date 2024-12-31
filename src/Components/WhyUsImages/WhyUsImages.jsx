@@ -48,7 +48,7 @@ const WhyUsImages = () => {
     ];
 
     return (
-        <section className="whyusimage">
+        <div className="whyusimage">
             {/* Titles */}
             <div className="title">Why Us</div>
             <div className="mainTitle">How We Differ</div>
@@ -84,7 +84,7 @@ const WhyUsImages = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </section>
+        </div>
     );
 };
 
