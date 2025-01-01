@@ -44,25 +44,25 @@
   color: #fff;
 }
 
-.roundImg {
+.hero .roundImg {
   height: 200px;
   width: 400px;
   margin: 0 auto;
   margin-top: 1rem;
 }
 
-.roundImg ul {
+.hero .roundImg ul {
   list-style: none;
   display: flex;
 }
-.roundImg ul li {
+.hero .roundImg ul li {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   margin-left: -14px;
   border: 2px solid #fff;
 }
-.roundImg ul li img {
+.hero .roundImg ul li img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -70,21 +70,21 @@
 .roundImg ul li:first-child {
   margin-left: 0;
 }
-.btnroundImg {
+.hero .btnroundImg {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   margin-top: 1rem;
 }
-.roundImg .text {
+.hero .roundImg .text {
   font-size: 14px;
   color: #ffffffe2;
   margin-top: 10px;
   text-align: center;
 }
 
-.roundImg .button .heroButton {
+.hero .roundImg .button .heroButton {
   background-color: #bab86c !important;
   color: #fff;
   font-size: 15px;
@@ -102,7 +102,7 @@
     float: left;
     margin-bottom: 25px;
   }
-  .roundImg .text {
+  .hero .roundImg .text {
     max-width: 300px;
     margin-inline: auto;
   }

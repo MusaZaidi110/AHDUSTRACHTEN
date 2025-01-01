@@ -21,9 +21,7 @@ const OrderDelivery = () => {
           <h1 className="Orderdelivery-title">Order TO Delivery</h1>
           <div className="roundImg">
             <div className="text">
-              At every stage of our process, from receiving your order to delivery, our focus is on quality, authenticity, and your satisfaction. When you choose us, you're not just purchasing a product; you're becoming a part of our story – a story built on craftsmanship, dedication, and excellence.
-
-              Let us be your trusted partner in delivering leather products that are as unique as you are. Place your order today and experience the difference!
+            From order placement to delivery, we prioritize quality, authenticity, and your satisfaction. Choosing us means becoming part of a journey rooted in craftsmanship and excellence. Trust us to deliver leather products as unique as you are. Place your order today and experience the difference!
             </div>
           </div>
         </div>

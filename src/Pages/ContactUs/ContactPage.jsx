@@ -1,67 +1,33 @@
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import useWeb3Forms from "@web3forms/react";
+import { ToastContainer, toast } from 'react-toastify';
+
 import "./ContactPage.css"; // Optional: Import CSS for styling
 import VillaIcon from "@mui/icons-material/Villa";
 import PhoneCallbackIcon from "@mui/icons-material/PhoneCallback";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
+import FactoryIcon from "@mui/icons-material/Factory";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    product: "",
-    material: "",
-    message: "",
+  const accessKey = "YOUR_ACCESS_KEY_HERE"; // Replace with your Web3Forms Access Key
+
+  const { register, reset, handleSubmit } = useForm();
+
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: accessKey,
+    settings: {
+      from_name: "Ahdus Trachten",
+      subject: "New Contact Message",
+    },
+    onSuccess: (msg, data) => {
+      toast.success("Successfully Submitted!");
+      reset(); // Reset the form after successful submission
+    },
+    onError: (msg, data) => {
+      toast.error("Some Error Occured!");
+    },
   });
-
-  const [errors, setErrors] = useState({
-    fullName: "",
-    email: "",
-    product: "",
-    material: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  // Simplified form validation (just check for non-empty fields)
-  const validateForm = () => {
-    let formErrors = {};
-
-    // Check for empty fields
-    for (let field in formData) {
-      if (!formData[field]) {
-        formErrors[field] = `${field.charAt(0).toUpperCase() + field.slice(1)} is required.`;
-      }
-    }
-
-    setErrors(formErrors);
-    return Object.keys(formErrors).length === 0;
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (validateForm()) {
-      // If form is valid, log the form data (you can also send it to a backend)
-      console.log("Form Data:", formData);
-
-      // Optionally, reset the form after submission
-      setFormData({
-        fullName: "",
-        email: "",
-        product: "",
-        material: "",
-        message: "",
-      });
-      alert("Your message has been sent successfully!");
-    }
-  };
 
   return (
     <div className="contactPage">
@@ -101,81 +67,90 @@ const Contact = () => {
                 <div className="contact-info-item">
                   <div className="contact-info-icon">
                     <i>
+                      <FactoryIcon />
+                    </i>
+                  </div>
+                  <div className="contact-info-content">
+                    <h4>Manufacturing Address</h4>
+                    <p>Sialkot, Pakistan</p>
+                  </div>
+                </div>
+
+                <div className="contact-info-item">
+                  <div className="contact-info-icon">
+                    <i>
                       <MarkunreadIcon />
                     </i>
                   </div>
                   <div className="contact-info-content">
                     <h4>Email</h4>
-                    <p>ntamerrwael@mfano.ga</p>
+                    <p>Ahdustrachten@gmail.com</p>
+                  </div>
+                </div>
+
+                <div className="contact-info-item">
+                  <div className="contact-info-icon">
+                    <i>
+                      <PhoneCallbackIcon />
+                    </i>
+                  </div>
+                  <div className="contact-info-content">
+                    <h4>Number</h4>
+                    <p>+123-4567-89-10</p>
                   </div>
                 </div>
               </div>
 
               <div className="contact-form">
-                <form id="contact-form" onSubmit={handleSubmit}>
+                <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
                   <h2>Send Message</h2>
 
                   <div className="input-box">
                     <input
                       type="text"
-                      name="fullName"
-                      value={formData.fullName}
-                      onChange={handleChange}
+                      {...register("fullName", { required: true })}
                       required
                     />
                     <span>Full Name</span>
-                    {errors.fullName && <p className="error">{errors.fullName}</p>}
                   </div>
 
                   <div className="input-box">
                     <input
                       type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
+                      {...register("email", { required: true })}
                       required
                     />
                     <span>Email</span>
-                    {errors.email && <p className="error">{errors.email}</p>}
                   </div>
 
                   <div className="input-box">
                     <input
                       type="text"
-                      name="product"
-                      value={formData.product}
-                      onChange={handleChange}
+                      {...register("product", { required: true })}
                       required
                     />
                     <span>What Product You Want?</span>
-                    {errors.product && <p className="error">{errors.product}</p>}
                   </div>
 
                   <div className="input-box">
                     <input
                       type="text"
-                      name="material"
-                      value={formData.material}
-                      onChange={handleChange}
+                      {...register("material", { required: true })}
                       required
                     />
-                    <span>Material You Intrested to be Used?</span>
-                    {errors.material && <p className="error">{errors.material}</p>}
+                    <span>Material You Are Interested In?</span>
                   </div>
 
                   <div className="input-box">
                     <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
+                      {...register("message", { required: true })}
                       required
-                    />
+                    ></textarea>
                     <span>Type your Message...</span>
-                    {errors.message && <p className="error">{errors.message}</p>}
                   </div>
 
                   <div className="input-box">
-                    <input type="submit" value="Send" />
+                    <input type="submit" value="Submit" />
                   </div>
                 </form>
               </div>
@@ -183,6 +158,7 @@ const Contact = () => {
           </div>
         </section>
       </main>
+      <ToastContainer />
     </div>
   );
 };
