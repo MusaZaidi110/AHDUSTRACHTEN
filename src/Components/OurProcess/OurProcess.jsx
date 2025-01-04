@@ -145,7 +145,13 @@ const TabsWithContent = () => {
 
   return (
     <section className="OurProcessContainer">
-      <div className="OurProcessWrapper">
+      <div className="title">Process</div>
+        <div className="mainTitle">Our Process Cycle</div>
+        <div className="borderLine">
+          <div className="upline"></div>
+          <div className="downline"></div>
+        </div>
+      <div className="OurProcessWrapper">        
         <div className="OurProcessTabs">
           {tabs.map((tab) => (
             <button
