@@ -55,7 +55,7 @@ const ProductPage = () => {
 
           <ProductCard
             img={img8}
-            title="Distressed or Oil-Pull Buffalo Leather"
+            title="Oil-Pull Cow Leather"
             paragraph="Treated with oils and waxes to give it a WORN look. It develops a beautiful patina over time and has a soft, flexible feel, often used for vintage-style products."
           />
 

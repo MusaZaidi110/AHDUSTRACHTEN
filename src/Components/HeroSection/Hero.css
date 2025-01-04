@@ -34,19 +34,20 @@
 }
 
 .hero-title {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 900;
-  line-height: 1;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   margin-top: 7rem;
   text-align: center;
   color: #fff;
+  line-height: 58px;
+  letter-spacing: -2px;
 }
 
 .hero .roundImg {
   height: 200px;
-  width: 400px;
+  width: 480px;
   margin: 0 auto;
   margin-top: 1rem;
 }

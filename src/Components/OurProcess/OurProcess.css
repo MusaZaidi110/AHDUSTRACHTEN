@@ -1,0 +1,157 @@
+.OurProcessContainer {
+  background-image: url("../../assets/AskedQuestion.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 24px;
+  position: relative; /* Ensure the pseudo-element is positioned correctly */
+  background-blend-mode: overlay; /* Blend the background image and overlay */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.OurProcessWrapper {
+  display: flex;
+  column-gap: 35px;
+  padding-top: 22px;
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.OurProcessTabs {
+  max-width: 240px;
+  width: 100%;
+  display: flex;
+  row-gap: 18px;
+  flex-direction: column;
+}
+
+.OurProcessTabs .pills {
+  width: 100%;
+  padding: 6px 0px 6px 35px;
+  display: block;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  outline: none;
+  color: #1e1e1e;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.OurProcessTabs .pills:hover {
+  border-color: #bab86c;
+  background-color: transparent;
+  color: #bab86c;
+}
+
+.OurProcessTabs .pills::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  background-color: #1e1e1e;
+  left: 15px;
+  top: 40%;
+}
+
+.pills.active {
+  color: #fff;
+  background-color: #bab86c !important;
+}
+
+.pills.active::before {
+  background-color: #fff;
+}
+
+.pills.active:hover {
+  color: #fff;
+  border-color: #d2e0f4;
+}
+
+.tabsText {
+  background-color: #f8fbff !important;
+  border: 1px solid #d2e0f4 !important;
+  border-radius: 10px;
+  padding: 22px 26px 0;
+  flex: 1;
+}
+
+.tabsText p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #333638;
+}
+
+.tabsText h2 {
+  color: #1e1e1e;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tabsText p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333638;
+  margin-bottom: 15px;
+}
+
+.tabsText ul {
+  margin: 10px 0 20px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.tabsText ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.tabsText ul ul {
+  margin-top: 5px;
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+.tabsText ul ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.OurProcessContainer .PaymentImages{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.calender{
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .OurProcessWrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .OurProcessTabs {
+    flex-direction: row;
+    overflow-x: scroll;
+    max-width: 100%;
+    gap: 20px;
+    padding-bottom: 12px;
+  }
+
+  button {
+    min-width: 150px;
+  }
+}

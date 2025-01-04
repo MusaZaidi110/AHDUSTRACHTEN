@@ -25,7 +25,7 @@
   height: 100%;
 }
 
-.social-icon,
+.payment-method,
 .menu {
   position: relative;
   display: flex;
@@ -38,25 +38,14 @@
   width: 100%;
 }
 
-.social-icon__item,
+.payment-method__item,
 .menu__item {
   list-style: none;
 }
-.social-icon__item h1,
+.payment-method__item h1,
 .menu__item h1 {
   color: #fff !important;
 }
-.social-icon__link {
-  font-size: 18px;
-  color: #ffffffe0;
-  margin: 9px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  transition: 0.5s;
-}
-.social-icon__link:hover,
 .menu__link:hover {
   transform: translateY(-10px);
   color: #bab86c;
@@ -88,13 +77,21 @@
   margin-bottom: 10px;
 }
 
+.PaymentMethodsContainer{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
     gap: 0;
     padding-inline: 2rem;
   }
-  .social-icon,
+  .payment-method,
   .menu,
   .Logo {
     max-width: 100%;

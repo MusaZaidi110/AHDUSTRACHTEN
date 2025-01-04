@@ -20,13 +20,13 @@ const Collection = () => {
         </div>
 
         <div className="collectionCards">
-          <CollectionCard
+          {/* <CollectionCard
             img={img1}
             title="Buffalo Skin"
             paragraph="Discover the strength and style of authentic buffalo leather,
             crafted for lasting durability and showcasing its unique, rugged
             texture."
-          />
+          /> */}
 
           <CollectionCard
             img={img2}

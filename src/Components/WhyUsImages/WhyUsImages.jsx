@@ -10,13 +10,14 @@ import "swiper/css/pagination";
 
 // Importing images
 import img1 from "../../assets/Machine/Machine-3.webp";
+
 import img2 from "../../assets/Making/Making-Parts-1.webp";
 import img3 from "../../assets/Making/Making-Part-6.webp";
 import img4 from "../../assets/Making/Making-Parts-3.webp";
 import img5 from "../../assets/Making/Making-Part-7.webp";
-import img6 from "../../assets/Making/Making-Part-5.webp";
-import img7 from "../../assets/Team/Machine-3.webp";
+import img7 from "../../assets/Team/Making-Part-9.webp";
 import img8 from "../../assets/Team/Making-Part-10.webp";
+
 import img9 from "../../assets/Product/Product-2.webp";
 import img10 from "../../assets/Product/Product-4.webp";
 import img11 from "../../assets/Product/Product-Leather-1.webp";
@@ -34,7 +35,7 @@ const WhyUsImages = () => {
         { src: img3, text: "Attention to Detail" },
         { src: img4, text: "Timeless Design" },
         { src: img5, text: "Authentic Leather" },
-        { src: img6, text: "Precision Work" },
+        { src: img1, text: "Precision Work" },
         { src: img7, text: "Dedicated Team" },
         { src: img8, text: "Modern Techniques" },
         { src: img9, text: "Premium Products" },
@@ -50,8 +51,8 @@ const WhyUsImages = () => {
     return (
         <div className="whyusimage">
             {/* Titles */}
-            <div className="title">Why Us</div>
-            <div className="mainTitle">How We Differ</div>
+            <div className="title">Gallery</div>
+            <div className="mainTitle">Products Showcase</div>
             <div className="borderLine">
                 <div className="upline"></div>
                 <div className="downline"></div>

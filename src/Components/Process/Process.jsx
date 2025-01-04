@@ -40,12 +40,12 @@ const ProcessFlow = () => {
 
           <div className="process-step">
             <img src={QualityCheck} alt="QualityCheck" />
-            <h1>5. Quality Check</h1>
+            <h1>5. Quality Assurance</h1>
           </div>
 
           <div className="process-step">
             <img src={Export} alt="Export" />
-            <h1>6. Export </h1>
+            <h1>6. Delivery </h1>
           </div>
         </div>
       </div>

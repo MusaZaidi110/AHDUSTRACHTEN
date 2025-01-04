@@ -1,9 +1,7 @@
 import React from 'react'
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-
 import "./OrderDelivery.css"
 
+import OurProcess from "../../Components/OurProcess/OurProcess.jsx";
 import WhyChoose from "../../Components/WhyChoose/WhyChoose.jsx";
 import MainVideo from "../../assets/Machine/HeroBackVideo.mp4";
 import ProcessTabs from '../../Components/ProcessTabs/ProcessTabs.jsx';
@@ -35,6 +33,8 @@ const OrderDelivery = () => {
       </div>
 
       <WhyChoose />
+
+      <OurProcess />
 
       <ProcessTabs />
     </>

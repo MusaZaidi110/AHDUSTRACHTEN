@@ -4,9 +4,6 @@
   min-height: 500px;
   padding: 3rem 5rem;
 }
-.whyus .borderLine .upline {
-  width: 100% !important;
-}
 
 .whyus .cards {
   display: flex;
@@ -19,15 +16,11 @@
   background-color: #615e5e;
   padding: 20px;
   border-radius: 20px;
-  width: 260px;
-  height: 250px;
+  width: 240px;
+  height: 220px;
 }
 .whyus .card h3 {
   color: #fff;
-}
-.whyus .card p {
-  margin-top: 10px;
-  color: #ffffff8c;
 }
 
 .whyus .btnContainer {

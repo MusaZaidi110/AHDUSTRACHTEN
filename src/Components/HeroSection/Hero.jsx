@@ -20,16 +20,13 @@ const Hero = () => {
         <video src={MainVideo} type="video/webm" autoPlay loop muted></video>
       </div>
       <div className="hero-content">
-        <h1 className="hero-title">Beautiful analytics to grow smarter</h1>
+        <h1 className="hero-title">Premium & Customized Lederhosen for your Business</h1>
         <div className="roundImg">
           <div className="text">
-            Self-serve analytics to boost user conversion, engagement, and
-            retention. Trusted by 4,000+ startups.
+           We take care of your design, embroidery, brand logo and 
+           make sure you get 100% premium and best lederhosen for your business.
           </div>
           <div className="btnroundImg">
-            <div className="button">
-              <Link className="btn heroButton">start now</Link>
-            </div>
             <div className="imgs">
               <ul>
                 <li>

@@ -2,15 +2,15 @@ import React from "react";
 import "./Footer.css";
 
 import Logo from "../../assets/Logo/logo white png.png";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import MailIcon from "@mui/icons-material/Mail";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
-  const email = "email@example.com";
+import ApplePay from "../../assets/PaymentMethod/ApplePay.png";
+import GPay from "../../assets/PaymentMethod/GPay.png";
+import MasterCard from "../../assets/PaymentMethod/MasterCard.png";
+import PayPal from "../../assets/PaymentMethod/PayPal.png";
+import Stripe from "../../assets/PaymentMethod/Stripe.png";
 
+const Footer = () => {
   return (
     <section className="FooterContainer">
       <footer className="footer">
@@ -46,34 +46,31 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul className="social-icon">
-          <li className="social-icon__item">
-            <h1>Social Links</h1>
+        <ul className="payment-method">
+          <li className="payment-method__item">
+            <h1>Payment Methods</h1>
           </li>
-          <li className="social-icon__item">
-            <Link className="social-icon__link" to={`mailto:${email}`}>
-              <MailIcon />
-              <small>Email</small>
-            </Link>
-          </li>
-          <li className="social-icon__item">
-            <Link className="social-icon__link" to="#">
-              <FacebookIcon />
-              <small>Facebook</small>
-            </Link>
-          </li>
-          <li className="social-icon__item">
-            <Link className="social-icon__link" to="#">
-              <InstagramIcon />
-              <small>Instagram</small>
-            </Link>
-          </li>
-          <li className="social-icon__item">
-            <Link className="social-icon__link" to="#">
-              <LinkedInIcon />
-              <small>LinkedIn</small>
-            </Link>
-          </li>
+          <div className="PaymentMethodsContainer">
+            <li className="payment-method__item">
+              <img src={ApplePay} alt="Apple Payment Method Icon" width={100} height={60} />
+            </li>
+            <li className="payment-method__item">
+              <img src={GPay} alt="Google Payment Method Icon" width={100} height={60} />
+            </li>
+          </div>
+
+          <div className="PaymentMethodsContainer">
+            <li className="payment-method__item">
+              <img src={MasterCard} alt="MasterCard Payment Method Icon" width={100} height={60} />
+            </li>
+            <li className="payment-method__item">
+              <img src={Stripe} alt="Stripe Payment Method Icon" width={100} height={60} />
+            </li>
+          </div>
+          
+          <div className="PaymentMethodsContainer">
+          <img src={PayPal} alt="Paypal Payment Method Icon" width={100} height={50} />
+          </div>
         </ul>
       </footer>
       <div className="endText">
