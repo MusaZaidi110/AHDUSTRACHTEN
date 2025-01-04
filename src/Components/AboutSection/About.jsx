@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import product1 from "../../assets/Product/Product-1.webp";
-import product2 from "../../assets/Product/Product-2.webp";
+import product2 from "../../assets/Product/ProductItem.jpeg";
 import product3 from "../../assets/Product/Product-3.webp";
 import product4 from "../../assets/Product/Product-4.webp";
 import product5 from "../../assets/Product/Product-5.webp";

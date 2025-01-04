@@ -12,9 +12,9 @@ import IconImg5 from "../../assets/ProcessIcons/Packaging.png";
 import IconImg6 from "../../assets/ProcessIcons/Export.png";
 
 import Image1 from "../../assets/Logo/logo white png.png";
-import Image2 from "../../assets/Team/Making-Part-9.webp";
-import Image3 from "../../assets/Team/Machine-3.webp";
-import Image4 from "../../assets/Product/Product-1.webp";
+import Image2 from "../../assets/Making/RawMaterials.jpeg";
+import Image3 from "../../assets/Team/Making-Part-10.webp";
+import Image4 from "../../assets/Product/InspectionReport.jpeg";
 import Image5 from "../../assets/Product/Product-4.webp";
 import Image6 from "../../assets/Delivery/Delivery-Transport-1.webp";
 
@@ -73,7 +73,7 @@ const ProcessTabs = () => {
                     <div className="TabContent">
                         <div className="TextBox">
                             <h2>2. Procurement of Premium Raw Materials</h2>
-                            <p>The foundation of our excellence lies in the quality of materials we use. We source 100% authentic, premium-grade leather, including buffalo and goat skin, from trusted suppliers. This ensures exceptional durability, strength, and performance for all our leather products. Each batch of leather undergoes rigorous inspection to meet our strict standards for texture, strength, and appearance, guaranteeing consistency and reliability in every order.
+                            <p>The foundation of our excellence lies in the quality of materials we use. We source 100% authentic, premium-grade leather, including Cow and goat skin, from trusted suppliers. This ensures exceptional durability, strength, and performance for all our leather products. Each batch of leather undergoes rigorous inspection to meet our strict standards for texture, strength, and appearance, guaranteeing consistency and reliability in every order.
                                 <br />
                                 Our commitment to ethical sourcing and sustainability means we work exclusively with suppliers who align with responsible practices. This allows us to provide businesses with products that not only reflect superior craftsmanship but also adhere to global standards for sustainable and ethical production.</p>
                         </div>

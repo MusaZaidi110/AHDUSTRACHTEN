@@ -35,7 +35,7 @@ const TabsWithContent = () => {
         <div>
           <h2>Affordable and Transparent</h2>
           <p>
-            We charge a minimal fee of 20 Euros per sample to cover production and shipping costs. This amount ensures that we can maintain our quality while providing you with a hands-on experience.
+            We charge a minimal fee of 140EUR per sample to cover production and shipping costs. This amount ensures that we can maintain our quality while providing you with a hands-on experience.
 
             <br /> <strong> Payment Method: </strong> <br />
             We accept multiple payment options, including wire transfers, PayPal, and other secure payment methods.
@@ -82,9 +82,9 @@ const TabsWithContent = () => {
           <h2>Flexible Delivery Timelines Based on Order Size</h2>
           <ul>
             For bulk orders, we offer customized timelines to meet your specific business needs:
-            <strong> <li>2000 Pieces: Delivered in 1 month</li> </strong>
-            <strong> <li>5000 Pieces: Delivered in 3 months</li> </strong>
-            <strong> <li>10,000 Pieces: Delivered in 6 months</li> </strong>
+            <strong> <li>Upto 2000 Pieces Delivered in 1 month</li> </strong>
+            <strong> <li>Upto 5000 Pieces Delivered in 3 months</li> </strong>
+            <strong> <li>Upto 10,000 Pieces Delivered in 6 months</li> </strong>
 
             <p>Our dedicated team ensures timely production and shipping without compromising on quality. </p>
             <strong> <li>How We Ensure Timeliness:</li> </strong>
@@ -103,8 +103,8 @@ const TabsWithContent = () => {
             For urgent orders, we recommend shipping by air, offering the quickest delivery times.
             <p>
              <strong> Cost Breakdown: </strong>
-              <li>3 Euros per Kg for orders up to 2000 pieces</li>
-              <li>2.5 Euros per Kg for orders up to 5000 pieces</li>
+              <li>3 EUR per Kg for orders up to 2000 pieces</li>
+              <li>2.5 EUR per Kg for orders up to 5000 pieces</li>
             </p>
             <p>
               <strong>Advantages of Air Shipping: </strong> 
@@ -125,8 +125,8 @@ const TabsWithContent = () => {
           For larger orders, sea shipping offers the most economical option.
             <p>
              <strong> Cost Breakdown: </strong>
-              <li>2 Euros per Kg for orders up to 2000 pieces</li>
-              <li>1.5 Euros per Kg for orders up to 5000 pieces</li>
+              <li>2 EUR per Kg for orders up to 2000 pieces</li>
+              <li>1.5 EUR per Kg for orders up to 5000 pieces</li>
             </p>
             <p>
               <strong>Advantages of Air Shipping: </strong> 

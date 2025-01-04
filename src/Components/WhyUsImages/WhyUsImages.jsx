@@ -9,8 +9,7 @@ import "swiper/css/grid";
 import "swiper/css/pagination";
 
 // Importing images
-import img1 from "../../assets/Machine/Machine-3.webp";
-
+import img1 from "../../assets/Making/RawMaterials.jpeg";
 import img2 from "../../assets/Making/Making-Parts-1.webp";
 import img3 from "../../assets/Making/Making-Part-6.webp";
 import img4 from "../../assets/Making/Making-Parts-3.webp";
@@ -18,9 +17,9 @@ import img5 from "../../assets/Making/Making-Part-7.webp";
 import img7 from "../../assets/Team/Making-Part-9.webp";
 import img8 from "../../assets/Team/Making-Part-10.webp";
 
-import img9 from "../../assets/Product/Product-2.webp";
+import img9 from "../../assets/Product/ProductPerson.jpeg";
 import img10 from "../../assets/Product/Product-4.webp";
-import img11 from "../../assets/Product/Product-Leather-1.webp";
+import img11 from "../../assets/Product/WhiteColorProduct.jpeg";
 import img12 from "../../assets/Product/Product-Leather-2.webp";
 import img13 from "../../assets/Product/Product-5.webp";
 import img14 from "../../assets/Product/Product-6.webp";

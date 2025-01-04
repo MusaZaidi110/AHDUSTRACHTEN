@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./Collection.css";
-import img1 from "../../assets/Product/buffaloleather.webp";
 import img2 from "../../assets/Product/GoatLeather.jpg";
 import img3 from "../../assets/Product/cowLeather.jfif";
 import img4 from "../../assets/Product/cowVelvety.jfif";

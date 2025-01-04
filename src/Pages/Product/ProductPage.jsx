@@ -5,7 +5,6 @@ import img1 from "../../assets/Product/FullGrain.jpg";
 import img2 from "../../assets/Product/TopGrain.jpg";
 import img3 from "../../assets/Product/Vegetable-Tanned.jpg";
 import img4 from "../../assets/Product/SuedeGoat.jpg";
-import img7 from "../../assets/Product/BuffaloNubuck.jfif";
 import img8 from "../../assets/Product/BuffaloOilPull.jfif";
 import img9 from "../../assets/Product/CowFullGrain.jfif";
 import img10 from "../../assets/Product/CowTopGrain.jfif";
@@ -45,12 +44,6 @@ const ProductPage = () => {
             img={img4}
             title="Suede Goat Leather"
             paragraph="Soft and velvety, adding a unique texture to our Trachten collection."
-          />
-
-          <ProductCard
-            img={img7}
-            title="Buffalo Nubuck Leather"
-            paragraph="Top-grain buffalo leather buffed to create a soft, suede-like texture. This variant is durable and has a velvety feel, making it ideal for unique and high-end products."
           />
 
           <ProductCard

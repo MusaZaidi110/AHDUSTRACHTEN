@@ -97,11 +97,10 @@
     width: 92%;
   }
   .hero-title {
-    font-size: 5rem;
+    font-size: 3rem;
   }
-  .roundImg {
-    float: left;
-    margin-bottom: 25px;
+  .hero .roundImg {
+    width: 100% !important;
   }
   .hero .roundImg .text {
     max-width: 300px;

@@ -73,8 +73,9 @@
     margin-right: 0;
   }
   .swiper-wrapper {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    transform: translate3d(0px, 0px, 0px) !important;
   }
   .titleHeader {
     padding-left: 2rem;

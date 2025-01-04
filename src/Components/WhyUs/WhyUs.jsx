@@ -25,6 +25,12 @@ const WhyUs = () => {
           </div>
 
           <div className="card">
+            <h3>We Foster Collaboration and Satisfaction to Ensure Unmatched Quality.
+            </h3>
+          </div>
+
+
+          <div className="card">
             <h3>We are Easily Approachable and Avaliable for Meetings in also Germany.
             </h3>
           </div>
