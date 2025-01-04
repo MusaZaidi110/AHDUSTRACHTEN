@@ -74,7 +74,7 @@ const Footer = () => {
         </ul>
       </footer>
       <div className="endText">
-        <p>&copy;2024-25 Ahdus Trachten | All Rights Reserved</p>
+        <p>&copy;2025-26 Ahdus Trachten | All Rights Reserved</p>
       </div>
     </section>
   );

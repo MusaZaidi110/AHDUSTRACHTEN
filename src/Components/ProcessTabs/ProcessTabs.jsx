@@ -61,10 +61,8 @@ const ProcessTabs = () => {
                 {value === 0 && (
                     <div className="TabContent">
                         <div className="TextBox">
-                            <h2>1. Customer Gave Us Order</h2>
-                            <p>It all begins with you! Once you place an order through our website or directly with us, our dedicated customer service team ensures that every detail of your order is accurately recorded. Whether it’s a standard product or a custom design tailored to your preferences, we work closely with you to capture your vision.
-
-                                From size and style preferences to any specific customizations, we make sure your requirements are our top priority. Every order is a commitment, and we make it our mission to exceed your expectations.</p>
+                            <h2>1. Streamlined Order Confirmation Process</h2>
+                            <p>Once your order is placed through our website or directly with our team, our dedicated customer service professionals ensure every detail is meticulously recorded. Whether you require a standard product or a customized solution tailored to your business needs, we collaborate closely with you to capture all specifications. From size and style to unique customizations, your requirements are our top priority. Every order represents a valuable partnership, and we are committed to delivering beyond expectations with precision and reliability.</p>
                         </div>
                         <div className="TabImage TextBox">
                             <img src={Image1} alt="Image 1" loading="lazy" />
@@ -74,23 +72,23 @@ const ProcessTabs = () => {
                 {value === 1 && (
                     <div className="TabContent">
                         <div className="TextBox">
-                            <h2>2. Raw Material Like Leather is Collected</h2>
-                            <p>The backbone of our quality is the materials we use. For our leather products, we source 100% authentic, premium-grade leather, including buffalo and goat skin, ensuring durability, comfort, and a luxurious finish.
-
-                                Our team works tirelessly to procure raw materials from trusted suppliers who share our passion for quality. Every piece of leather is thoroughly inspected to meet our high standards for texture, strength, and appearance. We aim to work with ethically sourced materials, ensuring our processes align with sustainability and responsible practices.</p>
+                            <h2>2. Procurement of Premium Raw Materials</h2>
+                            <p>The foundation of our excellence lies in the quality of materials we use. We source 100% authentic, premium-grade leather, including buffalo and goat skin, from trusted suppliers. This ensures exceptional durability, strength, and performance for all our leather products. Each batch of leather undergoes rigorous inspection to meet our strict standards for texture, strength, and appearance, guaranteeing consistency and reliability in every order.
+                                <br />
+                                Our commitment to ethical sourcing and sustainability means we work exclusively with suppliers who align with responsible practices. This allows us to provide businesses with products that not only reflect superior craftsmanship but also adhere to global standards for sustainable and ethical production.</p>
                         </div>
                         <div className="TabImage TextBox">
-                            <img src={Image2} alt="Image 1" loading="lazy"/>
+                            <img src={Image2} alt="Image 1" loading="lazy" />
                         </div>
                     </div>
                 )}
                 {value === 2 && (
                     <div className="TabContent">
                         <div className="TextBox">
-                            <h2>3. Manufacturing</h2>
-                            <p>The manufacturing process is where the magic begins! Our skilled artisans, with years of experience and expertise, start crafting your product. Using traditional techniques combined with modern tools, each item is handmade to perfection.
-
-                                Attention to detail is our hallmark. From precise stitching to intricate designs, our craftsmen treat each product as a piece of art. We take pride in the craftsmanship that goes into making each product unique and timeless.</p>
+                            <h2>3. Manufacturing Process</h2>
+                            <p>Our manufacturing process is where expertise meets precision. Our highly skilled artisans, with decades of experience, craft each product with meticulous attention to detail. By combining traditional craftsmanship techniques with state-of-the-art tools, we ensure that every item meets the highest standards of quality and durability.
+                                <br />
+                                With an emphasis on consistency and scalability, we cater to bulk production without compromising on quality. From precise stitching to intricate designs, every step of the process is carefully monitored to align with your business needs and specifications. Our manufacturing system ensures that each product is not only unique but also reliable and timeless, making it the perfect solution for your business’s premium leather requirements.</p>
                         </div>
                         <div className="TabImage TextBox">
                             <img src={Image3} alt="Image 1" loading="lazy" />
@@ -100,10 +98,10 @@ const ProcessTabs = () => {
                 {value === 3 && (
                     <div className="TabContent">
                         <div className="TextBox">
-                            <h2>4. Inspection</h2>
-                            <p>Quality control is not just a step; it's a responsibility we uphold. Once the manufacturing process is complete, our inspection team meticulously examines every product. This includes checking for stitching quality, design accuracy, durability, and overall finish.
-
-                                Our strict inspection process ensures that no product leaves our facility unless it meets our standards of excellence. We aim for perfection, so you receive nothing less than the best.</p>
+                            <h2>4. Quality Inspection</h2>
+                            <p>Quality control is the foundation of our commitment to delivering premium products. After manufacturing, our dedicated inspection team conducts a rigorous multi-point quality check on every product. This includes verifying stitching precision, design accuracy, material durability, and overall finish to ensure that each item aligns with your business’s expectations.
+                                <br />
+                                Our strict quality assurance protocols are designed to maintain consistency across large-scale orders while meeting industry standards and your unique specifications. We understand that your reputation depends on the quality of our products, so we make it our responsibility to deliver excellence every time. Trust our inspection process to uphold the reliability and value your business needs.</p>
                         </div>
                         <div className="TabImage TextBox">
                             <img src={Image4} alt="Image 1" loading="lazy" />
@@ -113,10 +111,10 @@ const ProcessTabs = () => {
                 {value === 4 && (
                     <div className="TabContent">
                         <div className="TextBox">
-                            <h2>5. Packaging with Brand Name</h2>
-                            <p>Packaging is where presentation meets protection. Each product is carefully packed to preserve its quality during transit. We use premium packaging materials, ensuring your product reaches you in pristine condition.
-
-                                Our packaging proudly showcases our brand name, reflecting the value and pride we put into every order. From eco-friendly wraps to branded boxes, every detail is designed to enhance your unboxing experience.</p>
+                            <h2>5. Packaging and Branding</h2>
+                            <p>Packaging is not just about protection; it’s about reinforcing your business’s reputation. Each product is securely packed using durable, premium materials to ensure safe transit, especially for bulk shipments. We understand the importance of maintaining product quality during delivery, whether the order is local or international.
+                                <br />
+                                We also offer customized packaging options that incorporate your brand name or logo, giving you the opportunity to strengthen your brand identity. From eco-friendly wraps to branded cartons, we tailor our packaging to meet your specific requirements while maintaining a professional and polished presentation. Rest assured, our packaging is designed to uphold both the quality of the product and the image of your business.</p>
                         </div>
                         <div className="TabImage TextBox">
                             <img src={Image5} alt="Image 5" loading="lazy" />
@@ -126,10 +124,12 @@ const ProcessTabs = () => {
                 {value === 5 && (
                     <div className="TabContent">
                         <div className="TextBox">
-                            <h2>6. Delivered</h2>
-                            <p>The final step is delivering your order to your doorstep. Partnering with reliable logistics companies, we ensure timely and secure delivery. Whether you’re in Pakistan, Germany, the UK, or anywhere in the world, we guarantee a seamless and hassle-free shipping process.
-
-                                Our journey doesn’t end here. We follow up with our customers to ensure satisfaction and welcome feedback to continually improve our services. Your happiness and trust mean everything to us.</p>
+                            <h2>6. Delivery and Logistics</h2>
+                            <p>The final step in our process is ensuring the safe and timely delivery of your order. We partner with trusted logistics providers specializing in bulk shipments, ensuring secure and efficient delivery to your specified location, whether in Pakistan, Germany, the UK, or anywhere else in the world.
+<br />
+We offer tailored shipping options, including sea and air freight, to meet your cost and timeline requirements. Our logistics team ensures transparency with real-time tracking and clear communication at every stage of the delivery process.
+<br />
+Our commitment doesn’t end with delivery. We maintain open communication to ensure your complete satisfaction and gather feedback to enhance our services. As your business partner, we strive to provide seamless logistics that support your operations and strengthen our partnership.</p>
                         </div>
                         <div className="TabImage TextBox">
                             <img src={Image6} alt="Image 6" loading="lazy" />

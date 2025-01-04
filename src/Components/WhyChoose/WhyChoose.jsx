@@ -13,15 +13,13 @@ const WhyChoose = () => {
             <div className="TextBox">
               <h1>Mission</h1>
               <p>
-              To Redefine Quality and Craftsmanship, One Product at a Time.
-              We aim to leave an impression that speaks of quality, passion, and dedication.
+              To Redefine Quality and Craftsmanship, One Product at a Time. We are committed to delivering exceptional value to our business partners by providing premium products that embody quality, passion, and dedication. Our mission is to foster long-term partnerships through consistent reliability, superior craftsmanship, and a shared commitment to excellence.
               </p>
             </div>
             <div className="TextBox">
               <h1>Values</h1>
               <p>
-              To Become the Global Standard for Premium Leather Products.
-              We aim to create a legacy that inspires confidence and loyalty among our customers across the globe.
+              To Redefine Quality and Craftsmanship, One Product at a Time. We are committed to delivering exceptional value to our business partners by providing premium products that embody quality, passion, and dedication. Our mission is to foster long-term partnerships through consistent reliability, superior craftsmanship, and a shared commitment to excellence.
               </p>
             </div>
           </div>
