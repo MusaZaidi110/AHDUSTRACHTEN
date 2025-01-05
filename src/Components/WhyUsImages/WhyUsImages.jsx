@@ -9,11 +9,12 @@ import "swiper/css/grid";
 import "swiper/css/pagination";
 
 // Importing images
-import img1 from "../../assets/Making/RawMaterials.jpeg";
+import img1 from "../../assets/Product/Product-1.webp";
 import img2 from "../../assets/Making/Making-Parts-1.webp";
 import img3 from "../../assets/Making/Making-Part-6.webp";
 import img4 from "../../assets/Making/Making-Parts-3.webp";
 import img5 from "../../assets/Making/Making-Part-7.webp";
+import img6 from "../../assets/Making/RawMaterials.jpeg";
 import img7 from "../../assets/Team/Making-Part-9.webp";
 import img8 from "../../assets/Team/Making-Part-10.webp";
 
@@ -34,7 +35,7 @@ const WhyUsImages = () => {
         { src: img3, text: "Attention to Detail" },
         { src: img4, text: "Timeless Design" },
         { src: img5, text: "Authentic Leather" },
-        { src: img1, text: "Precision Work" },
+        { src: img6, text: "Precision Work" },
         { src: img7, text: "Dedicated Team" },
         { src: img8, text: "Modern Techniques" },
         { src: img9, text: "Premium Products" },
