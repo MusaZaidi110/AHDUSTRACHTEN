@@ -64,14 +64,16 @@ const WhyUsImages = () => {
                 grid={{ rows: 2, fill: "row" }}
                 spaceBetween={20}
                 autoplay={{
-                    delay: 2000, // Slide every 2 seconds
-                    disableOnInteraction: false, // Keeps autoplay enabled after user interaction
-                }}
+                    delay: 3000,
+                    disableOnInteraction: false, 
+                  }}
                 breakpoints={{
                     640: { slidesPerView: 2 },
-                    1024: { slidesPerView: 4 }, // Adjust the number of columns on larger screens
+                    1024: { slidesPerView: 4 },
                 }}
                 className="swiper-container"
+                direction="horizontal"
+                loop={true}
             >
                 {/* Render each image dynamically in SwiperSlide */}
                 {images.map((image, index) => (
