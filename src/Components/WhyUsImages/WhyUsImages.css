@@ -5,6 +5,11 @@
     padding: 3rem 5rem;
 }
 
+.yarl__navigation_prev,
+.yarl__navigation_next {
+    display: none !important;
+}
+
 .whyusimage .borderLine .upline {
     width: 100% !important;
 }
