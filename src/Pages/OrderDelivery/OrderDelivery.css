@@ -60,9 +60,10 @@
     }
     .Orderdelivery-content {
       width: 92%;
+      padding-bottom: 20px;
     }
     .Orderdelivery-title {
-      font-size: 5rem;
+      font-size: 4rem;
     }
     .Orderdelivery .roundImg .text {
       width: 100%;
