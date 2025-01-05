@@ -58,8 +58,9 @@ const Contact = () => {
                   <div className="contact-info-content">
                     <h4>Address</h4>
                     <p>
-                      Islamabad/Rawalpindi,
-                      <br /> Pakistan
+                      Office#-01 Acantilado Commercial 49,
+                      <br /> Phase 7 Bahria Town
+                      <br /> Islamabad, Pakistan
                     </p>
                   </div>
                 </div>

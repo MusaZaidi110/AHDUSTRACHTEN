@@ -16,7 +16,7 @@ import img4 from "../../assets/Making/Making-Parts-3.webp";
 import img5 from "../../assets/Making/Making-Part-7.webp";
 import img6 from "../../assets/Making/RawMaterials.jpeg";
 import img7 from "../../assets/Team/Making-Part-9.webp";
-import img8 from "../../assets/Team/Making-Part-10.webp";
+import img8 from "../../assets/Product/ProductItem.jpeg";
 
 import img9 from "../../assets/Product/ProductPerson.jpeg";
 import img10 from "../../assets/Product/Product-4.webp";
@@ -37,7 +37,7 @@ const WhyUsImages = () => {
         { src: img5, text: "Authentic Leather" },
         { src: img6, text: "Precision Work" },
         { src: img7, text: "Dedicated Team" },
-        { src: img8, text: "Modern Techniques" },
+        { src: img8, text: "Product Perfection" },
         { src: img9, text: "Premium Products" },
         { src: img10, text: "Elegant Styles" },
         { src: img11, text: "Unmatched Durability" },

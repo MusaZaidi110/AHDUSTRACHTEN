@@ -23,18 +23,6 @@ const ProductPage = () => {
 
         <div className="ProductContent">
           <ProductCard
-            img={img1}
-            title="Full-Grain Goat Leather"
-            paragraph="Known for its natural grain and longevity, perfect for authentic, durable pieces."
-          />
-
-          <ProductCard
-            img={img2}
-            title="Top-Grain Goat Leather"
-            paragraph="Smooth and consistent, combining durability with a refined finish."
-          />
-
-          <ProductCard
             img={img3}
             title="Vegetable-Tanned Goat Leather"
             paragraph="Eco-friendly and richly textured, ideal for traditional, handcrafted designs."
@@ -62,6 +50,18 @@ const ProductPage = () => {
             img={img10}
             title="Top-Grain Cow Leather"
             paragraph=" Sanded to remove imperfections, giving it a smooth, consistent finish while retaining durability and flexibility. It’s commonly used for a refined, polished look."
+          />
+
+<ProductCard
+            img={img1}
+            title="Full-Grain Goat Leather"
+            paragraph="Known for its natural grain and longevity, perfect for authentic, durable pieces."
+          />
+
+          <ProductCard
+            img={img2}
+            title="Top-Grain Goat Leather"
+            paragraph="Smooth and consistent, combining durability with a refined finish."
           />
         </div>
       </section>

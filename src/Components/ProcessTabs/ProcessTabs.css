@@ -8,6 +8,10 @@
 .MuiTabs-indicator{
     background-color: #bab86c !important;
 }
+.ProcessTabs {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 .ProcessTabs .TabContent{
     display: flex;
     align-items: center;
