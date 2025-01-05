@@ -99,10 +99,52 @@ const WhyUsImages = () => {
             </Swiper>
 
             {/* Lightbox Component */}
+            {/* <Lightbox
+                open={open}
+                close={() => setOpen(false)}
+                slides={[images[currentIndex]]} // Show only the clicked image
+                animation={{ swipe: false }} // Disable swipe functionality
+                styles={{
+                    container: {
+                        borderRadius: "22px",
+                        overflow: "hidden",
+                    },
+                    image: {
+                        borderRadius: "22px",
+                    },
+                }}
+            /> */}
             <Lightbox
                 open={open}
                 close={() => setOpen(false)}
                 slides={[images[currentIndex]]} // Show only the clicked image
+                render={{
+                    toolbar: ({ toolbar }) => (
+                        <>
+                            {toolbar}
+                            <button
+                                className="yarl__toolbar_button_download"
+                                onClick={() => {
+                                    const a = document.createElement("a");
+                                    a.href = images[currentIndex].src; // Image URL
+                                    a.download = `Image-${currentIndex + 1}`; // Download filename
+                                    a.click();
+                                }}
+                                title="Download Image"
+                                style={{
+                                    background: "none",
+                                    border: "none",
+                                    color: "white",
+                                    cursor: "pointer",
+                                    fontSize: "16px",
+                                    marginLeft: "10px",
+                                }}
+                            >
+                                &#x1F4BE; {/* Unicode for a floppy disk icon (or use a custom icon) */}
+                            </button>
+                        </>
+                    ),
+                }}
                 animation={{ swipe: false }} // Disable swipe functionality
                 styles={{
                     container: {

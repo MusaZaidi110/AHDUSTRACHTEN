@@ -69,6 +69,7 @@ const Footer = () => {
           </div>
           
           <div className="PaymentMethodsContainer">
+            
           <img src={PayPal} alt="Paypal Payment Method Icon" width={100} height={50} />
           </div>
         </ul>
