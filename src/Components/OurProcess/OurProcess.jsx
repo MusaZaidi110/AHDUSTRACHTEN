@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import "./OurProcess.css";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
-import ApplePay from "../../assets/PaymentMethod/ApplePay.png";
-import GPay from "../../assets/PaymentMethod/GPay.png";
 import MasterCard from "../../assets/PaymentMethod/MasterCard.png";
 import PayPal from "../../assets/PaymentMethod/PayPal.png";
-import Stripe from "../../assets/PaymentMethod/Stripe.png";
-
+import LCPayment from "../../assets/PaymentMethod/LCPayment.png";
 const TabsWithContent = () => {
   const [activeTab, setActiveTab] = useState("tab1");
 
@@ -44,11 +41,21 @@ const TabsWithContent = () => {
           </p>
 
           <div className="PaymentImages">
-            <img src={ApplePay} alt="Apple Pay Icon" width={100} height={70} />
-            <img src={GPay} alt="Google Pay Icon" width={100} height={70} />
-            <img src={MasterCard} alt="MasterCard Pay Icon" width={100} height={60} />
-            <img src={PayPal} alt="PayPal Pay Icon" width={100} height={60} />
-            <img src={Stripe} alt="Stripe Pay Icon" width={100} height={60} />
+            <div className="paymentwithText">
+              <img src={MasterCard} alt="MasterCard Pay Icon" width={100} height={60} />
+              <span>Bank Transfer</span>
+            </div>
+
+            <div className="paymentwithText">
+              <img src={PayPal} alt="PayPal Pay Icon" width={100} height={60} />
+              <span>PayPal</span>
+            </div>
+
+            <div className="paymentwithText">
+              <img src={LCPayment} alt="LCPayment Pay Icon" width={100} height={60} />
+              <span>LC Payment Method</span>
+            </div>
+
           </div>
         </div>
       ),
@@ -88,7 +95,7 @@ const TabsWithContent = () => {
 
             <p>Our dedicated team ensures timely production and shipping without compromising on quality. </p>
             <strong> <li>How We Ensure Timeliness:</li> </strong>
-           <p> We use advanced production methods and maintain close communication with you throughout the process. </p>
+            <p> We use advanced production methods and maintain close communication with you throughout the process. </p>
           </ul>
         </div>
       ),
@@ -102,12 +109,12 @@ const TabsWithContent = () => {
           <ul>
             For urgent orders, we recommend shipping by air, offering the quickest delivery times.
             <p>
-             <strong> Cost Breakdown: </strong>
+              <strong> Cost Breakdown: </strong>
               <li>3 EUR per Kg for orders up to 2000 pieces</li>
               <li>2.5 EUR per Kg for orders up to 5000 pieces</li>
             </p>
             <p>
-              <strong>Advantages of Air Shipping: </strong> 
+              <strong>Advantages of Air Shipping: </strong>
               <li>Faster delivery times</li>
               <li>Ideal for lightweight and urgent orders</li>
             </p>
@@ -122,14 +129,14 @@ const TabsWithContent = () => {
         <div>
           <h2>Cost-Effective and Efficient Sea Freight</h2>
           <ul>
-          For larger orders, sea shipping offers the most economical option.
+            For larger orders, sea shipping offers the most economical option.
             <p>
-             <strong> Cost Breakdown: </strong>
+              <strong> Cost Breakdown: </strong>
               <li>2 EUR per Kg for orders up to 2000 pieces</li>
               <li>1.5 EUR per Kg for orders up to 5000 pieces</li>
             </p>
             <p>
-              <strong>Advantages of Air Shipping: </strong> 
+              <strong>Advantages of Air Shipping: </strong>
               <li>Lower shipping costs</li>
               <li>Suitable for heavy or high-volume orders</li>
             </p>
@@ -146,12 +153,12 @@ const TabsWithContent = () => {
   return (
     <section className="OurProcessContainer">
       <div className="title">Process</div>
-        <div className="mainTitle">Our Process Cycle</div>
-        <div className="borderLine">
-          <div className="upline"></div>
-          <div className="downline"></div>
-        </div>
-      <div className="OurProcessWrapper">        
+      <div className="mainTitle">Our Process Cycle</div>
+      <div className="borderLine">
+        <div className="upline"></div>
+        <div className="downline"></div>
+      </div>
+      <div className="OurProcessWrapper">
         <div className="OurProcessTabs">
           {tabs.map((tab) => (
             <button

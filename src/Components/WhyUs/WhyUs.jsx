@@ -15,31 +15,31 @@ const WhyUs = () => {
 
         <div className="cards">
           <div className="card">
-            <h3>Proper Sampling Before Production to Satisfy Customer.</h3>
+            <p>Proper Sampling Before Production to Satisfy Customer.</p>
           </div>
 
           <div className="card">
-            <h3>Every Single Piece is Quality-Controlled.
+            <p>Every Single Piece is Quality-Controlled.
               Three Quality Processes to Insure Quality.
-            </h3>
+            </p>
           </div>
 
           <div className="card">
-            <h3>We Foster Collaboration and Satisfaction to Ensure Unmatched Quality.
-            </h3>
+            <p>We Foster Collaboration and Satisfaction to Ensure Unmatched Quality.
+            </p>
           </div>
 
 
           <div className="card">
-            <h3>We are Easily Approachable and Avaliable for Meetings in also Germany.
-            </h3>
+            <p>We are Easily Approachable and Avaliable for Meetings in also Germany.
+            </p>
           </div>
 
           <div className="card">
-            <h3>
+            <p>
               We also deals with Custom Designs. 
               Private Branding can be done on Products.
-            </h3>
+            </p>
           </div>
         </div>
 

@@ -17,9 +17,9 @@
   padding: 20px;
   border-radius: 20px;
   width: 240px;
-  height: 220px;
+  height: 200px;
 }
-.whyus .card h3 {
+.whyus .card p {
   color: #fff;
 }
 

@@ -4,11 +4,9 @@ import "./Footer.css";
 import Logo from "../../assets/Logo/logo white png.png";
 import { Link } from "react-router-dom";
 
-import ApplePay from "../../assets/PaymentMethod/ApplePay.png";
-import GPay from "../../assets/PaymentMethod/GPay.png";
 import MasterCard from "../../assets/PaymentMethod/MasterCard.png";
 import PayPal from "../../assets/PaymentMethod/PayPal.png";
-import Stripe from "../../assets/PaymentMethod/Stripe.png";
+import LCPayment from "../../assets/PaymentMethod/LCPayment.png";
 
 const Footer = () => {
   return (
@@ -50,28 +48,22 @@ const Footer = () => {
           <li className="payment-method__item">
             <h1>Payment Methods</h1>
           </li>
-          <div className="PaymentMethodsContainer">
-            <li className="payment-method__item">
-              <img src={ApplePay} alt="Apple Payment Method Icon" width={100} height={60} />
-            </li>
-            <li className="payment-method__item">
-              <img src={GPay} alt="Google Payment Method Icon" width={100} height={60} />
-            </li>
-          </div>
 
           <div className="PaymentMethodsContainer">
             <li className="payment-method__item">
               <img src={MasterCard} alt="MasterCard Payment Method Icon" width={100} height={60} />
             </li>
             <li className="payment-method__item">
-              <img src={Stripe} alt="Stripe Payment Method Icon" width={100} height={60} />
+              <img src={PayPal} alt="Paypal Payment Method Icon" width={100} height={50} />
             </li>
           </div>
-          
+
           <div className="PaymentMethodsContainer">
-            
-          <img src={PayPal} alt="Paypal Payment Method Icon" width={100} height={50} />
+            <li className="payment-method__item">
+              <img src={LCPayment} alt="LCPayment Method Icon" width={100} height={60} />
+            </li>
           </div>
+
         </ul>
       </footer>
       <div className="endText">

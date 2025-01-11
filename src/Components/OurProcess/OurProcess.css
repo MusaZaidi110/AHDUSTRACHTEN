@@ -137,6 +137,17 @@
   gap: 12px;
 }
 
+.paymentwithText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.paymentwithText span{
+  font-size: 14px;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 768px) {
   .OurProcessContainer{
     padding: 1rem;

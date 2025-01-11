@@ -36,19 +36,14 @@ const Contact = () => {
           <div className="section-header">
             <div className="container">
               <h2>Contact Us</h2>
-              <p>
-                We warmly welcome you to connect with us! Your feedback is
-                valued, and our team is here to assist with any questions,
-                orders, or custom requests, from material choices to unique
-                designs. Don't hesitate to reach out — we're just a message
-                away, ready to make your vision a reality!
-              </p>
             </div>
           </div>
 
           <div className="container">
             <div className="row">
+              
               <div className="contact-info">
+                
                 <div className="contact-info-item">
                   <div className="contact-info-icon">
                     <i>
@@ -56,9 +51,9 @@ const Contact = () => {
                     </i>
                   </div>
                   <div className="contact-info-content">
-                    <h4>Address</h4>
+                    <h4>HeadQuarter</h4>
                     <p>
-                      Office#-01 Acantilado Commercial 49,
+                      Office-01, Acantilado Commercial 49,
                       <br /> Phase 7 Bahria Town
                       <br /> Islamabad, Pakistan
                     </p>
@@ -72,8 +67,13 @@ const Contact = () => {
                     </i>
                   </div>
                   <div className="contact-info-content">
-                    <h4>Manufacturing Address</h4>
-                    <p>Sialkot, Pakistan</p>
+                    <h4>Manufacturing Unit</h4>
+                    <p>
+                      Leather Village, <br />
+                      Head Marala Rd ,<br />
+                      Malkay Kalan, Sialkot, Punjab
+
+                    </p>
                   </div>
                 </div>
 
@@ -85,7 +85,7 @@ const Contact = () => {
                   </div>
                   <div className="contact-info-content">
                     <h4>Email</h4>
-                    <p>Ahdustrachten@gmail.com</p>
+                    <p>usman@ahdustrachtenexport.com</p>
                   </div>
                 </div>
 
@@ -97,7 +97,7 @@ const Contact = () => {
                   </div>
                   <div className="contact-info-content">
                     <h4>Number</h4>
-                    <p>+123-4567-89-10</p>
+                    <p>+92 339 4022 534</p>
                   </div>
                 </div>
               </div>

@@ -45,6 +45,7 @@
 .payment-method__item h1,
 .menu__item h1 {
   color: #fff !important;
+  font-size: 1.3rem;
 }
 .menu__link:hover {
   transform: translateY(-10px);
@@ -52,7 +53,7 @@
 }
 
 .menu__link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fff;
   margin: 6px;
   display: inline-block;
@@ -65,7 +66,7 @@
 .footer p {
   color: #333;
   margin: 15px 0 10px 0;
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-weight: 300;
 }
 
