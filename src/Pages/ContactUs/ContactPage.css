@@ -176,6 +176,10 @@ section {
     padding-inline: 0;
   }
 
+  .container{
+    min-width: 100%;
+  }
+
   .row {
     flex-direction: column;
   }

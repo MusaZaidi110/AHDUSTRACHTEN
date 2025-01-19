@@ -47,6 +47,7 @@
   color: #fff !important;
   font-size: 1.3rem;
 }
+
 .menu__link:hover {
   transform: translateY(-10px);
   color: #bab86c;

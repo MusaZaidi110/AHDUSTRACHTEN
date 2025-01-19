@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import MasterCard from "../../assets/PaymentMethod/MasterCard.png";
 import PayPal from "../../assets/PaymentMethod/PayPal.png";
 import LCPayment from "../../assets/PaymentMethod/LCPayment.png";
+import germanBank from "../../assets/PaymentMethod/GermanBank.png";
 
 const Footer = () => {
   return (
@@ -62,6 +63,9 @@ const Footer = () => {
             <li className="payment-method__item">
               <img src={LCPayment} alt="LCPayment Method Icon" width={100} height={60} />
             </li>
+            <div className="payment-method__item">
+              <img src={germanBank} alt="German Bank Method Icon" width={100} />
+            </div>
           </div>
 
         </ul>

@@ -76,6 +76,7 @@ const WhyUsImages = () => {
                 autoplay={{
                     delay: 3000,
                     disableOnInteraction: false,
+                    pauseOnMouseEnter: false,
                 }}
                 breakpoints={{
                     640: { slidesPerView: 2 },
@@ -98,22 +99,6 @@ const WhyUsImages = () => {
                 ))}
             </Swiper>
 
-            {/* Lightbox Component */}
-            {/* <Lightbox
-                open={open}
-                close={() => setOpen(false)}
-                slides={[images[currentIndex]]} // Show only the clicked image
-                animation={{ swipe: false }} // Disable swipe functionality
-                styles={{
-                    container: {
-                        borderRadius: "22px",
-                        overflow: "hidden",
-                    },
-                    image: {
-                        borderRadius: "22px",
-                    },
-                }}
-            /> */}
             <Lightbox
                 open={open}
                 close={() => setOpen(false)}

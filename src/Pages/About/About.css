@@ -99,15 +99,16 @@
 .right .btn{
   background-color: #bab86c;
   margin-top: 1rem;
-
-
-
+  text-align: center;
 }
 .right .btn:hover{
   background-color: #cecb78;
 }
 
 @media screen and (max-width: 678px) {
+  .About {
+    margin-top: 3rem;
+  }
   .aboutContent {
     max-width: 1050px;
     margin: 0 auto;
