@@ -5,7 +5,9 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import MasterCard from "../../assets/PaymentMethod/MasterCard.png";
 import PayPal from "../../assets/PaymentMethod/PayPal.png";
 import LCPayment from "../../assets/PaymentMethod/LCPayment.png";
+import { useTranslation } from "react-i18next";
 const TabsWithContent = () => {
+  const {t} = useTranslation();
   const [activeTab, setActiveTab] = useState("tab1");
 
   const tabs = [
@@ -14,13 +16,13 @@ const TabsWithContent = () => {
       label: "Sample",
       content: (
         <div>
-          <h2>Experience the Quality Before Commitment</h2>
+          <h2>{t('ourprocessTab1h2')}</h2>
           <p>
-            We understand that making the right decision requires confidence in the product's quality. That’s why we offer product samples to showcase our craftsmanship and the materials we use. Each sample is meticulously prepared to reflect the quality and standards we maintain across all our products.
-            <br /> <strong> Why Samples? </strong> <br />
-            Ensure the product aligns with your requirements before placing a bulk order.
-            <br /> <strong> How it Works? </strong> <br />
-            Simply contact us with your requirements, and we will deliver a sample tailored to your needs.
+            {t('ourprocessTab1P1')}
+            <br /> <strong> {t('ourprocessTab1P2')} </strong> <br />
+            {t('ourprocessTab1P3')}
+            <br /> <strong> {t('ourprocessTab1P4')} </strong> <br />
+           {t('ourprocessTab1P5')} 
           </p>
         </div>
       ),
@@ -30,14 +32,11 @@ const TabsWithContent = () => {
       label: "Payment of Samples",
       content: (
         <div>
-          <h2>Affordable and Transparent</h2>
+          <h2>{t('ourprocessTab2h2')}</h2>
           <p>
-            We charge a minimal fee of 140EUR per sample to cover production and shipping costs. This amount ensures that we can maintain our quality while providing you with a hands-on experience.
-
-            <br /> <strong> Payment Method: </strong> <br />
-            We accept multiple payment options, including wire transfers, PayPal, and other secure payment methods.
-            What’s Included in the Fee?
-            Your sample charges cover the product, packaging, and standard shipping.
+            {t('ourprocessTab2P1')}
+            <br /> <strong> {t('ourprocessTab2P2')} </strong> <br />
+            {t('ourprocessTab2P3')}
           </p>
 
           <div className="PaymentImages">
@@ -65,17 +64,16 @@ const TabsWithContent = () => {
       label: "Sample Times",
       content: (
         <div>
-          <h2>Quick Turnaround for Prompt Decisions</h2>
+          <h2>{t('ourprocessTab3h2')}</h2>
           <p>
-            We know time is of the essence in business. That’s why we commit to delivering samples within one week from the date of order confirmation.
-
-            <br /> <strong> Fast Processing: </strong> <br />
-            Orders are prepared and dispatched promptly, ensuring you can review the sample without unnecessary delays.
-            <br /> <strong> Customized Samples: </strong> <br />
-            Customizations may slightly increase the delivery time, but we will communicate this clearly.
+            {t('ourprocessTab3P1')}
+            <br /> <strong> {t('ourprocessTab3P2')} </strong> <br />
+            {t('ourprocessTab3P3')}
+            <br /> <strong> {t('ourprocessTab3P4')} </strong> <br />
+            {t('ourprocessTab3P5')}
             <div className="calender">
               <CalendarMonthIcon />
-              <strong>1 Week</strong>
+              <strong>{t('ourprocessTime')}</strong>
             </div>
           </p>
         </div>
@@ -86,16 +84,16 @@ const TabsWithContent = () => {
       label: "Time with Quantity",
       content: (
         <div>
-          <h2>Flexible Delivery Timelines Based on Order Size</h2>
+          <h2>{t('ourprocessTab4h2')}</h2>
           <ul>
-            For bulk orders, we offer customized timelines to meet your specific business needs:
-            <strong> <li>Upto 2000 Pieces Delivered in 1 month</li> </strong>
-            <strong> <li>Upto 5000 Pieces Delivered in 3 months</li> </strong>
-            <strong> <li>Upto 10,000 Pieces Delivered in 6 months</li> </strong>
+            {t('ourprocessTab4P1')}
+            <strong> <li>{t('ourprocessTab4P2')}</li> </strong>
+            <strong> <li>{t('ourprocessTab4P3')}</li> </strong>
+            <strong> <li>{t('ourprocessTab4P4')}</li> </strong>
 
-            <p>Our dedicated team ensures timely production and shipping without compromising on quality. </p>
-            <strong> <li>How We Ensure Timeliness:</li> </strong>
-            <p> We use advanced production methods and maintain close communication with you throughout the process. </p>
+            <p>{t('ourprocessTab4P5')} </p>
+            <strong> <li>{t('ourprocessTab4P6')}</li> </strong>
+            <p> {t('ourprocessTab4P7')} </p>
           </ul>
         </div>
       ),
@@ -105,18 +103,18 @@ const TabsWithContent = () => {
       label: "Shipping by Air",
       content: (
         <div>
-          <h2>Fast and Reliable Air Freight</h2>
+          <h2>{t('ourprocessTab5h2')}</h2>
           <ul>
-            For urgent orders, we recommend shipping by air, offering the quickest delivery times.
+            {t('ourprocessTab5P1')}
             <p>
-              <strong> Cost Breakdown: </strong>
-              <li>3 EUR per Kg for orders up to 2000 pieces</li>
-              <li>2.5 EUR per Kg for orders up to 5000 pieces</li>
+              <strong>{t('ourprocessTab5P2')}</strong>
+              <li>{t('ourprocessTab5Li1')}</li>
+              <li>{t('ourprocessTab5Li2')}</li>
             </p>
             <p>
-              <strong>Advantages of Air Shipping: </strong>
-              <li>Faster delivery times</li>
-              <li>Ideal for lightweight and urgent orders</li>
+              <strong>{t('ourprocessTab5P3')}</strong>
+              <li>{t('ourprocessTab5Li3')}</li>
+              <li>{t('ourprocessTab5Li4')}</li>
             </p>
           </ul>
         </div>
@@ -127,23 +125,23 @@ const TabsWithContent = () => {
       label: "Shipping by Sea",
       content: (
         <div>
-          <h2>Cost-Effective and Efficient Sea Freight</h2>
+          <h2>{t('ourprocessTab6h2')}</h2>
           <ul>
-            For larger orders, sea shipping offers the most economical option.
+            {t('ourprocessTab6P1')}
             <p>
-              <strong> Cost Breakdown: </strong>
-              <li>2 EUR per Kg for orders up to 2000 pieces</li>
-              <li>1.5 EUR per Kg for orders up to 5000 pieces</li>
+              <strong>{t('ourprocessTab6P2')}</strong>
+              <li>{t('ourprocessTab6Li1')}</li>
+              <li>{t('ourprocessTab6Li2')}</li>
             </p>
             <p>
-              <strong>Advantages of Air Shipping: </strong>
-              <li>Lower shipping costs</li>
-              <li>Suitable for heavy or high-volume orders</li>
+              <strong>{t('ourprocessTab6P3')}</strong>
+              <li>{t('ourprocessTab6Li3')}</li>
+              <li>{t('ourprocessTab6Li4')}</li>
             </p>
           </ul>
         </div>
       ),
-    },
+    }
   ];
 
   const handleTabClick = (id) => {
@@ -152,8 +150,8 @@ const TabsWithContent = () => {
 
   return (
     <section className="OurProcessContainer">
-      <div className="title">Process</div>
-      <div className="mainTitle">Our Process Cycle</div>
+      <div className="title">{t('ourprocessTitle')}</div>
+      <div className="mainTitle">{t('ourprocessMainTitle')}</div>
       <div className="borderLine">
         <div className="upline"></div>
         <div className="downline"></div>

@@ -9,13 +9,15 @@ import img8 from "../../assets/Product/BuffaloOilPull.jfif";
 import img9 from "../../assets/Product/CowFullGrain.jfif";
 import img10 from "../../assets/Product/CowTopGrain.jfif";
 import { ProductCard } from "./ProductCard";
+import { useTranslation } from "react-i18next";
 
 const ProductPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section className="products">
-        <div className="title">Our Products</div>
-        <div className="mainTitle">Materials We Use</div>
+        <div className="title">{t("productTitle")}</div>
+        <div className="mainTitle">{t("productMainTitle")}</div>
         <div className="borderLine">
           <div className="upline"></div>
           <div className="downline"></div>
@@ -24,44 +26,44 @@ const ProductPage = () => {
         <div className="ProductContent">
           <ProductCard
             img={img3}
-            title="Vegetable-Tanned Goat Leather"
-            paragraph="Eco-friendly and richly textured, ideal for traditional, handcrafted designs."
+            title={t("productCardTitle1")}
+            paragraph={t("productCardContent1")}
           />
 
           <ProductCard
             img={img4}
-            title="Suede Goat Leather"
-            paragraph="Soft and velvety, adding a unique texture to our Trachten collection."
+            title={t("productCardTitle2")}
+            paragraph={t("productCardContent2")}
           />
 
           <ProductCard
             img={img8}
-            title="Oil-Pull Cow Leather"
-            paragraph="Treated with oils and waxes to give it a WORN look. It develops a beautiful patina over time and has a soft, flexible feel, often used for vintage-style products."
+            title={t("productCardTitle3")}
+            paragraph={t("productCardContent3")}
           />
 
           <ProductCard
             img={img9}
-            title="Full-Grain Cow Leather"
-            paragraph="The highest quality cow leather with the natural grain intact. It is known for its durability, strength, and unique character that develops a beautiful patina over time."
+            title={t("productCardTitle4")}
+            paragraph={t("productCardContent4")}
           />
 
           <ProductCard
             img={img10}
-            title="Top-Grain Cow Leather"
-            paragraph=" Sanded to remove imperfections, giving it a smooth, consistent finish while retaining durability and flexibility. It’s commonly used for a refined, polished look."
+            title={t("productCardTitle5")}
+            paragraph={t("productCardContent5")}
           />
 
-<ProductCard
+          <ProductCard
             img={img1}
-            title="Full-Grain Goat Leather"
-            paragraph="Known for its natural grain and longevity, perfect for authentic, durable pieces."
+            title= {t('productCardTitle6')}
+            paragraph= {t('productCardContent6')}
           />
 
           <ProductCard
             img={img2}
-            title="Top-Grain Goat Leather"
-            paragraph="Smooth and consistent, combining durability with a refined finish."
+            title= {t('productCardTitle7')}
+            paragraph= {t('productCardContent7')}
           />
         </div>
       </section>

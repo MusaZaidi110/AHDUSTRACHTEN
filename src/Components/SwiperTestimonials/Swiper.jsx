@@ -12,8 +12,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/virtual";
 import "./SwiperCustom.css";
+import { useTranslation } from "react-i18next";
 
 export default () => {
+  const { t } = useTranslation();
+
   return (
     <Swiper
       modules={[Pagination, Virtual]}
@@ -30,8 +33,8 @@ export default () => {
           <div className="headContainer">
             <img src={Img1} alt="Customer 1 Picture" />
             <div className="nameContainer">
-              <div className="name">Krist und König</div>
-              <div className="company">Germany</div>
+              <div className="name">{t("swiperName")}</div>
+              <div className="company">{t("swiperCompany")}</div>
             </div>
             <Stack spacing={1}>
               <Rating
@@ -46,15 +49,11 @@ export default () => {
           <hr />
 
           <div className="TestimonialContent">
-            <h1>Quality You Can Rely On – Crafted by Experts</h1>
-            <p>
-            I am beyond impressed with my purchase! The craftsmanship and meticulous attention to detail are truly unparalleled. It’s evident that excellence and quality are at the heart of this brand. This is more than a product—it’s a masterpiece. I’m already looking forward to my next order!
-            </p>
+            <h1>{t("swiperHeader")}</h1>
+            <p>{t("swiperContent")}</p>
           </div>
         </div>
       </SwiperSlide>
-
-
     </Swiper>
   );
 };

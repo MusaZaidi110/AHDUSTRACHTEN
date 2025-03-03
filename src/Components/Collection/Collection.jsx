@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useTranslation } from 'react-i18next';
 import "./Collection.css";
 import img2 from "../../assets/Product/GoatLeather.jpg";
 import img3 from "../../assets/Product/cowLeather.jfif";
@@ -8,46 +8,35 @@ import img4 from "../../assets/Product/cowVelvety.jfif";
 import { CollectionCard } from "./CollectionCard";
 
 const Collection = () => {
+    const { t } = useTranslation();
+
   return (
     <>
       <section className="collection">
-        <div className="title opposite">Our Products</div>
-        <div className="mainTitle">Our Top Collections</div>
+        <div className="title opposite">{t('collectionTitle')}</div>
+        <div className="mainTitle">{t('collectionMainTitle')}</div>
         <div className="borderLine">
           <div className="upline"></div>
           <div className="downline"></div>
         </div>
 
         <div className="collectionCards">
-          {/* <CollectionCard
-            img={img1}
-            title="Buffalo Skin"
-            paragraph="Discover the strength and style of authentic buffalo leather,
-            crafted for lasting durability and showcasing its unique, rugged
-            texture."
-          /> */}
-
           <CollectionCard
             img={img2}
-            title="Regular Goat Skin Beige"
-            paragraph="Embrace the softness of regular goat skin in 
-                beige, designed for comfort with a refined, natural texture that
-                brings elegance to every piece."
+            title = {t('collectionCard1Title')}
+            paragraph= {t('collectionCard1Desc')}
           />
 
           <CollectionCard
             img={img3}
-            title="Goat suede Beige"
-            paragraph="Discover the plush feel and refined look of goat suede in beige,
-                offering a soft, velvety texture that adds warmth and
-                sophistication to any piece."
+            title = {t('collectionCard2Title')}
+            paragraph= {t('collectionCard2Desc')}
           />
 
           <CollectionCard
             img={img4}
-            title="Velvety Cow Suede"
-            paragraph="Experience the luxurious softness of velvety cow suede, ideal
-                for pieces with a rich texture and smooth, refined finish."
+            title = {t('collectionCard3Title')}
+            paragraph= {t('collectionCard3Desc')}
           />
         </div>
       </section>

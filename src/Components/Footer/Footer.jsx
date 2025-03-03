@@ -8,8 +8,11 @@ import MasterCard from "../../assets/PaymentMethod/MasterCard.png";
 import PayPal from "../../assets/PaymentMethod/PayPal.png";
 import LCPayment from "../../assets/PaymentMethod/LCPayment.png";
 import germanBank from "../../assets/PaymentMethod/GermanBank.png";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const {t} = useTranslation();
+
   return (
     <section className="FooterContainer">
       <footer className="footer">
@@ -21,33 +24,33 @@ const Footer = () => {
 
         <ul className="menu">
           <li className="menu__item">
-            <h1>Website Links</h1>
+            <h1>{t('footerMenuHeading1')}</h1>
           </li>
           <li className="menu__item">
             <Link className="menu__link" to="/">
-              Home
+              {t('footerHome')}
             </Link>
           </li>
           <li className="menu__item">
             <Link className="menu__link" to="/About">
-              About
+              {t('footerAbout')}
             </Link>
           </li>
           <li className="menu__item">
             <Link className="menu__link" to="/Product">
-              Product
+              {t('footerProduct')}
             </Link>
           </li>
           <li className="menu__item">
             <Link className="menu__link" to="/Contact">
-              Contact
+              {t('footerContact')}
             </Link>
           </li>
         </ul>
 
         <ul className="payment-method">
           <li className="payment-method__item">
-            <h1>Payment Methods</h1>
+            <h1>{t('footerPaymentHeader')}</h1>
           </li>
 
           <div className="PaymentMethodsContainer">
@@ -71,7 +74,7 @@ const Footer = () => {
         </ul>
       </footer>
       <div className="endText">
-        <p>&copy;2025-26 Ahdus Trachten | All Rights Reserved</p>
+        <p>&copy; {t('footerCopyRights')}</p>
       </div>
     </section>
   );

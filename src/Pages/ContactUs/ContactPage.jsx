@@ -8,8 +8,11 @@ import VillaIcon from "@mui/icons-material/Villa";
 import PhoneCallbackIcon from "@mui/icons-material/PhoneCallback";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
 import FactoryIcon from "@mui/icons-material/Factory";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const {t} = useTranslation();
+
   const accessKey = "YOUR_ACCESS_KEY_HERE"; // Replace with your Web3Forms Access Key
 
   const { register, reset, handleSubmit } = useForm();
@@ -35,7 +38,7 @@ const Contact = () => {
         <section>
           <div className="section-header">
             <div className="container">
-              <h2>Contact Us</h2>
+              <h2>{t('contactTitle')}</h2>
             </div>
           </div>
 
@@ -51,7 +54,7 @@ const Contact = () => {
                     </i>
                   </div>
                   <div className="contact-info-content">
-                    <h4>HeadQuarter</h4>
+                    <h4>{t('contactInfoHeader1')}</h4>
                     <p>
                       Office-01, Acantilado Commercial 49,
                       <br /> Phase 7 Bahria Town
@@ -67,7 +70,7 @@ const Contact = () => {
                     </i>
                   </div>
                   <div className="contact-info-content">
-                    <h4>Manufacturing Unit</h4>
+                    <h4>{t('contatcInfoHeader2')}</h4>
                     <p>
                       Leather Village, <br />
                       Head Marala Rd ,<br />
@@ -84,7 +87,7 @@ const Contact = () => {
                     </i>
                   </div>
                   <div className="contact-info-content">
-                    <h4>Email</h4>
+                    <h4>{t('contactEmailHeader')}</h4>
                     <p>usman@ahdustrachtenexport.com</p>
                   </div>
                 </div>
@@ -96,7 +99,7 @@ const Contact = () => {
                     </i>
                   </div>
                   <div className="contact-info-content">
-                    <h4>Number</h4>
+                    <h4>{t('contactNumberHeader')}</h4>
                     <p>+92 339 4022 534</p>
                   </div>
                 </div>
@@ -104,7 +107,7 @@ const Contact = () => {
 
               <div className="contact-form">
                 <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
-                  <h2>Send Message</h2>
+                  <h2>{t('contactFormHeader')}</h2>
 
                   <div className="input-box">
                     <input
@@ -112,7 +115,7 @@ const Contact = () => {
                       {...register("fullName", { required: true })}
                       required
                     />
-                    <span>Full Name</span>
+                    <span>{t('contactFullName')}</span>
                   </div>
 
                   <div className="input-box">
@@ -121,7 +124,7 @@ const Contact = () => {
                       {...register("email", { required: true })}
                       required
                     />
-                    <span>Email</span>
+                    <span>{t('contactEmailHeader')}</span>
                   </div>
 
                   <div className="input-box">
@@ -130,7 +133,7 @@ const Contact = () => {
                       {...register("product", { required: true })}
                       required
                     />
-                    <span>What Product You Want?</span>
+                    <span>{t('contactFormProductWant')}</span>
                   </div>
 
                   <div className="input-box">
@@ -139,7 +142,7 @@ const Contact = () => {
                       {...register("material", { required: true })}
                       required
                     />
-                    <span>Material You Are Interested In?</span>
+                    <span>{t('contactFormMaterial')}</span>
                   </div>
 
                   <div className="input-box">
@@ -147,11 +150,11 @@ const Contact = () => {
                       {...register("message", { required: true })}
                       required
                     ></textarea>
-                    <span>Type your Message...</span>
+                    <span>{t('contactFormMessage')}</span>
                   </div>
 
                   <div className="input-box">
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value={t('contactFormButton')} />
                   </div>
                 </form>
               </div>

@@ -12,19 +12,21 @@ import img7 from "../../assets/Product/Product-7.webp";
 import img8 from "../../assets/Product/Product-8.webp";
 import img9 from "../../assets/Product/Product-9.webp";
 import img10 from "../../assets/Product/Product-10.webp";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const {t} = useTranslation();
+
   return (
     <div className="hero">
       <div className="hero-video">
         <video src={MainVideo} type="video/webm" autoPlay loop muted></video>
       </div>
       <div className="hero-content">
-        <h1 className="hero-title">Premium & Customized Lederhosen for your Business</h1>
+        <h1 className="hero-title">{t('herosectionHeroTitle')}</h1>
         <div className="roundImg">
           <div className="text">
-           We take care of your design, embroidery, brand logo and 
-           make sure you get 100% premium and best lederhosen for your business.
+            {t('herosectionText')}
           </div>
           <div className="btnroundImg">
             <div className="imgs">

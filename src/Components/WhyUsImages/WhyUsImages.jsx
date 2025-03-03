@@ -28,8 +28,10 @@ import img13 from "../../assets/Product/Product-5.webp";
 import img14 from "../../assets/Product/Product-6.webp";
 import img15 from "../../assets/Product/Product-9.webp";
 import img16 from "../../assets/Product/Product-10.webp";
+import { useTranslation } from "react-i18next";
 
 const WhyUsImages = () => {
+    const {t} = useTranslation();
     const [open, setOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0); // To track the clicked image index
 
@@ -61,8 +63,8 @@ const WhyUsImages = () => {
     return (
         <div className="whyusimage">
             {/* Titles */}
-            <div className="title">Gallery</div>
-            <div className="mainTitle">Products Showcase</div>
+            <div className="title">{t('whyusImageTitle')}</div>
+            <div className="mainTitle">{t('whyusImageMainTitle')}</div>
             <div className="borderLine">
                 <div className="upline"></div>
                 <div className="downline"></div>

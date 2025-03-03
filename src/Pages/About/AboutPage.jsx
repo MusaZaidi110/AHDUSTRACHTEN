@@ -14,14 +14,17 @@ import UpdateIcon from "@mui/icons-material/Update";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import GppGoodIcon from "@mui/icons-material/GppGood";
 import WhyUsImages from "../../Components/WhyUsImages/WhyUsImages.jsx";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section className="About">
         <div className="aboutContent">
-          <div className="title">About US</div>
-          <div className="mainTitle">Our INTRODUCTION </div>
+          <div className="title">{t("aboutTitle")}</div>
+          <div className="mainTitle">{t("aboutMainTitle")}</div>
           <div className="borderLine">
             <div className="upline"></div>
             <div className="downline"></div>
@@ -37,11 +40,9 @@ const AboutPage = () => {
                         style={{ fontSize: "1.5rem", color: "#bab86c" }}
                       />
                     </ListItemIcon>
-                    <span>Handcrafted Excellence:</span>
+                    <span>{t("introductionHeading1")}</span>
                   </div>
-                  We specialize in crafting premium leather products by hand,
-                  ensuring every item meets the highest standards of quality and
-                  detail.
+                  {t("introductionContent1")}
                 </li>
                 <li>
                   <div className="headingwithIcon">
@@ -52,9 +53,7 @@ const AboutPage = () => {
                     </ListItemIcon>
                     <span>100% Pure Leather:</span>
                   </div>
-                  Using only genuine, 100% pure leather, our products embody
-                  durability and timeless style, offering long-lasting value to
-                  our customers.
+                  {t("introductionContent2")}
                 </li>
                 <li>
                   <div className="headingwithIcon">
@@ -63,11 +62,9 @@ const AboutPage = () => {
                         style={{ fontSize: "1.5rem", color: "#bab86c" }}
                       />
                     </ListItemIcon>
-                    <span>Proudly Made in Pakistan:</span>
+                    <span>{t("introductionHeading3")}</span>
                   </div>
-                  Rooted in Pakistan’s rich heritage of craftsmanship, our
-                  products reflect our country’s dedication to artistry and
-                  skill.
+                  {t("introductionContent3")}
                 </li>
                 <li>
                   <div className="headingwithIcon">
@@ -76,11 +73,9 @@ const AboutPage = () => {
                         style={{ fontSize: "1.5rem", color: "#bab86c" }}
                       />
                     </ListItemIcon>
-                    <span>Global Export Reach:</span>
+                    <span>{t("introductionHeading4")}</span>
                   </div>
-                  Trusted worldwide, we proudly export our leather products
-                  globally, connecting clients with authentic, high-quality
-                  leather goods.
+                  {t("introductionContent4")}
                 </li>
                 <li>
                   <div className="headingwithIcon">
@@ -89,10 +84,9 @@ const AboutPage = () => {
                         style={{ fontSize: "1.5rem", color: "#bab86c" }}
                       />
                     </ListItemIcon>
-                    <span>Quality-Centric Approach:</span>
+                    <span>{t("introductionHeading5")}</span>
                   </div>
-                  Our commitment to excellence has made us renowned, as we
-                  prioritize quality in every stitch, seam, and finish.
+                  {t("introductionContent5")}
                 </li>
               </ul>
             </div>
@@ -102,8 +96,8 @@ const AboutPage = () => {
           </div>
 
           <div className="workContent">
-            <div className="title">Our Strategy</div>
-            <div className="mainTitle">Our Work Process </div>
+            <div className="title">{t("workTitle")}</div>
+            <div className="mainTitle">{t("workMainTitle")}</div>
             <div className="borderLine">
               <div className="upline"></div>
               <div className="downline"></div>
@@ -122,12 +116,9 @@ const AboutPage = () => {
                           style={{ fontSize: "1.5rem", color: "#bab86c" }}
                         />
                       </ListItemIcon>
-                      <span>Personalized Deal-Making</span>
+                      <span>{t("workHeading1")}</span>
                     </div>
-                    We begin by engaging with our customers to close a deal that
-                    aligns with their vision—whether it’s choosing from our
-                    curated selection of high-quality materials or working with
-                    custom options specified by the client.
+                    {t("workContent1")}
                   </li>
                   <li>
                     <div className="headingwithIcon">
@@ -136,11 +127,9 @@ const AboutPage = () => {
                           style={{ fontSize: "1.5rem", color: "#bab86c" }}
                         />
                       </ListItemIcon>
-                      <span>Tailored Production Process</span>
+                      <span>{t("workHeading2")}</span>
                     </div>
-                    Once the details are finalized, our skilled artisans start
-                    crafting the order with meticulous attention to detail,
-                    ensuring each piece is made to perfection.
+                    {t("workContent2")}
                   </li>
                   <li>
                     <div className="headingwithIcon">
@@ -149,12 +138,9 @@ const AboutPage = () => {
                           style={{ fontSize: "1.5rem", color: "#bab86c" }}
                         />
                       </ListItemIcon>
-                      <span>Ongoing Progress Updates</span>
+                      <span>{t("workHeading3")}</span>
                     </div>
-                    Throughout the production process, we keep our customers
-                    informed, providing regular updates so they can follow each
-                    step and witness the care and craftsmanship that goes into
-                    their products.
+                    {t("workContent3")}
                   </li>
                   <li>
                     <div className="headingwithIcon">
@@ -163,12 +149,9 @@ const AboutPage = () => {
                           style={{ fontSize: "1.5rem", color: "#bab86c" }}
                         />
                       </ListItemIcon>
-                      <span>Secure and Reliable Delivery</span>
+                      <span>{t('workHeading4')}</span>
                     </div>
-                    After completion, we package the products using secure,
-                    industry-leading methods, ensuring safe and reliable
-                    delivery, no matter where in the world our customers are
-                    located.
+                    {t('workContent4')}
                   </li>
                   <li>
                     <div className="headingwithIcon">
@@ -177,17 +160,14 @@ const AboutPage = () => {
                           style={{ fontSize: "1.5rem", color: "#bab86c" }}
                         />
                       </ListItemIcon>
-                      <span>Commitment to Quality and Timeliness</span>
+                      <span>{t('workHeading5')}</span>
                     </div>
-                    Our primary focus remains on maintaining the highest quality
-                    standards while meeting the committed delivery
-                    timeframe—delivering an experience as exceptional as the
-                    products themselves.
+                    {t('workContent5')}
                   </li>
                 </ul>
-                <a href="#" className="btn bigBtn">
-                  Let's connect with us
-                </a>
+                <Link href="/Contact" className="btn bigBtn">
+                  {t('workContactBtn')}
+                </Link>
               </div>
             </div>
           </div>

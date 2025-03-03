@@ -2,7 +2,11 @@ import React from "react";
 import "./Testimonials.css";
 import Swaper from "./Swiper.jsx";
 import MainVideo from "../../assets/Making/Making-Machine-2.webm";
+import { useTranslation } from "react-i18next";
 const Testimonials = () => {
+  
+  const {t} = useTranslation()
+
   return (
     <>
       <section className="testimonials">
@@ -11,8 +15,8 @@ const Testimonials = () => {
         </div>
 
         <div className="titleHeader">
-          <div className="title">Testimonials</div>
-          <div className="mainTitle">Our Clients</div>
+          <div className="title">{t('testimonialsTitle')}</div>
+          <div className="mainTitle">{t('testimonialsMainTitle')}</div>
         </div>
         <div className="swiperSlides">
           <Swaper />

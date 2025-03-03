@@ -1,6 +1,9 @@
 import React from "react";
 import "./WhyChoose.css";
+import { useTranslation } from "react-i18next";
 const WhyChoose = () => {
+  const {t} = useTranslation();
+  
   return (
     <>
       <div className="WhyChooseContainer">
@@ -13,13 +16,13 @@ const WhyChoose = () => {
             <div className="TextBox">
               <h1>Mission</h1>
               <p>
-              To Redefine Quality and Craftsmanship, One Product at a Time. We are committed to delivering exceptional value to our business partners by providing premium products that embody quality, passion, and dedication. Our mission is to foster long-term partnerships through consistent reliability, superior craftsmanship, and a shared commitment to excellence.
+              {t('WhyChooseMission')}
               </p>
             </div>
             <div className="TextBox">
               <h1>Values</h1>
               <p>
-              To Redefine Quality and Craftsmanship, One Product at a Time. We are committed to delivering exceptional value to our business partners by providing premium products that embody quality, passion, and dedication. Our mission is to foster long-term partnerships through consistent reliability, superior craftsmanship, and a shared commitment to excellence.
+              {t('WhyChooseValues')}
               </p>
             </div>
           </div>

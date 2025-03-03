@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
+import '../../../translations/i18n'; // Import i18n configuration
 import "./About.css";
 import product1 from "../../assets/Product/Product-1.webp";
 import product2 from "../../assets/Product/ProductItem.jpeg";
@@ -19,6 +21,12 @@ import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import GppGoodIcon from "@mui/icons-material/GppGood";
 
 const About = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   const images = [
     product1,
     product2,
@@ -35,8 +43,8 @@ const About = () => {
   return (
     <>
       <section className="about">
-        <div className="title">About Us</div>
-        <div className="mainTitle">Who Are We</div>
+        <div className="title">{t('aboutTitle')}</div>
+        <div className="mainTitle">{t('aboutMainTitle')}</div>
         <div className="borderLine">
           <div className="upline"></div>
           <div className="downline"></div>
@@ -54,9 +62,7 @@ const About = () => {
                       marginTop: "5px",
                     }}
                   />
-                  Welcome to AhdusTrachten! Based in Pakistan, we specialize in
-                  exquisite, handmade leather products that reflect our rich
-                  heritage and commitment to quality.
+                  {t('aboutFirstFeatureList')}
                 </div>
               </li>
 
@@ -69,9 +75,7 @@ const About = () => {
                       marginTop: "5px",
                     }}
                   />
-                  Each piece tells a story crafted by our skilled artisans using
-                  100% pure leather, ensuring durability and timeless style in
-                  every product.
+                  {t('aboutSecondFeatureList')}
                 </div>
               </li>
 
@@ -84,9 +88,7 @@ const About = () => {
                       marginTop: "5px",
                     }}
                   />
-                  Our customer-centric approach fosters personalized
-                  relationships, guiding you through the design and production
-                  process to bring your vision to life.
+                  {t('aboutThirdFeatureList')}
                 </div>
               </li>
 
@@ -99,8 +101,7 @@ const About = () => {
                       marginTop: "5px",
                     }}
                   />
-                  We prioritize timely delivery and secure shipping, ensuring a
-                  seamless experience from start to finish.
+                  {t('aboutFourthFeatureList')}
                 </div>
               </li>
 
@@ -113,28 +114,11 @@ const About = () => {
                       marginTop: "5px",
                     }}
                   />
-                  Join us in celebrating the beauty of handmade leather
-                  products—explore our collection and find the perfect blend of
-                  tradition and modern elegance.
+                  {t('aboutFifthFeatureList')}
                 </div>
               </li>
             </ul>
           </div>
-          {/* <div className="rotator">
-            <div className="banner">
-              <div className="slider" style={{ "--quantity": images.length }}>
-                {images.map((src, index) => (
-                  <div
-                    key={index}
-                    className="item"
-                    style={{ "--position": index + 1 }}
-                  >
-                    <img src={src} alt={`Product ${index + 1}`} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div> */}
 
           <div className="mockImg">
             <img src={MockImg} alt="MockImg" />

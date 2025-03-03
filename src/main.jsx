@@ -9,6 +9,9 @@ import ProductPage from "./Pages/Product/ProductPage.jsx";
 import Layout from "./Pages/Layout.jsx";
 import OrderDelivery from "./Pages/OrderDelivery/OrderDelivery.jsx";
 
+import { I18nextProvider } from 'react-i18next';
+import i18n from "../translations/i18n.js";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -54,6 +57,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <I18nextProvider i18n={i18n}>
+      <RouterProvider router={router} />
+    </I18nextProvider>
   </StrictMode>
 );

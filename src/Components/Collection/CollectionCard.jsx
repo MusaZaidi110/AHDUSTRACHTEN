@@ -1,13 +1,17 @@
 import React from "react";
 import "./Collection.css";
 import { Link } from "react-router-dom";
-export const CollectionCard = ({ img, title, paragraph }) => {
+import { useTranslation } from "react-i18next";
+
+export const CollectionCard = ({ img, title, paragraph }) => {  
+  const {t} = useTranslation()
+
   return (
     <>
       <div className="collectionCard">
         <img src={img} alt={title} />
         <Link to="/Contact">
-          <div className="overlay">Contact now for Customize Leather</div>
+          <div className="overlay">{t('collectionOverlay')}</div>
         </Link>
         <div className="contentCard">
           <h2>{title}</h2>

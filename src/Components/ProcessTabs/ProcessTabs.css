@@ -39,7 +39,7 @@
     backdrop-filter: blur(28px);
     max-width: 60%;
     margin: 0 auto;
-    height: 350px;
+    min-height: 350px;
 }
 .ProcessTabs .TextBox h2{
     color: #bab86c;
