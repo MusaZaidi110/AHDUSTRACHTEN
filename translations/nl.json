@@ -168,6 +168,10 @@
   "contactFullName": "Vollständiger Name",
   "contactFormProductWant": "Welches Produkt wünschen Sie?",
   "contactFormMaterial": "Material, das Sie interessiert?",
-  "contactFormMessage" : "Geben Sie Ihre Nachricht ein...",
-  "contactFormButton" : "Einreichen"
+  "contactFormMessage": "Geben Sie Ihre Nachricht ein...",
+  "contactFormButton": "Einreichen",
+  "retailerTitle": "Unser Händler in Deutschland",
+  "retailerLocation" : "Standort des Händlers",
+  "retailerWebsite" : "Händler-Website",
+  "retailerContact" : "Wenden Sie sich an den Händler"
 }

@@ -8,7 +8,7 @@ i18n.use(initReactI18next).init({
     en: { translation: enTranslations },
     nl: { translation: nlTranslations }
   },
-  lng: 'en' // Default language
+  lng: 'nl' // Default language
 });
 
 export default i18n;

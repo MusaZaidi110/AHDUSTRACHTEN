@@ -13,7 +13,7 @@ import BuildIcon from "@mui/icons-material/Build";
 import UpdateIcon from "@mui/icons-material/Update";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import GppGoodIcon from "@mui/icons-material/GppGood";
-import WhyUsImages from "../../Components/WhyUsImages/WhyUsImages.jsx";
+// import WhyUsImages from "../../Components/WhyUsImages/WhyUsImages.jsx";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -173,7 +173,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      <WhyUsImages />
+      {/* <WhyUsImages /> */}
     </>
   );
 };
