@@ -3,6 +3,10 @@ import "./Footer.css";
 
 import Logo from "../../assets/Logo/logo white png.png";
 import { Link } from "react-router-dom";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import EmailIcon from "@mui/icons-material/Email";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 import MasterCard from "../../assets/PaymentMethod/MasterCard.png";
 import PayPal from "../../assets/PaymentMethod/PayPal.png";
@@ -11,70 +15,84 @@ import germanBank from "../../assets/PaymentMethod/GermanBank.png";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section className="FooterContainer">
       <footer className="footer">
-        <div className="Logo">
-          <div className="logoImg">
-            <img src={Logo} alt="Logo Image" />
+        <div className="col LogoText" style={{width: "28%"}}>
+          <div className="logo">
+            <Link to={"/"}>
+              <img src={Logo} alt="Webstie Logo" width={120} height={80} />
+            </Link>
+          </div>
+          <div className="text">
+            {t('herosectionText')}
           </div>
         </div>
 
-        <ul className="menu">
-          <li className="menu__item">
-            <h1>{t('footerMenuHeading1')}</h1>
-          </li>
-          <li className="menu__item">
-            <Link className="menu__link" to="/">
-              {t('footerHome')}
-            </Link>
-          </li>
-          <li className="menu__item">
-            <Link className="menu__link" to="/About">
-              {t('footerAbout')}
-            </Link>
-          </li>
-          <li className="menu__item">
-            <Link className="menu__link" to="/Product">
-              {t('footerProduct')}
-            </Link>
-          </li>
-          <li className="menu__item">
-            <Link className="menu__link" to="/Contact">
-              {t('footerContact')}
-            </Link>
-          </li>
-        </ul>
-
-        <ul className="payment-method">
-          <li className="payment-method__item">
-            <h1>{t('footerPaymentHeader')}</h1>
-          </li>
-
-          <div className="PaymentMethodsContainer">
-            <li className="payment-method__item">
-              <img src={MasterCard} alt="MasterCard Payment Method Icon" width={100} height={60} />
+        <div className="col contact-info" style={{width: "42%"}}>
+          <h4>Contact Info:</h4>
+          <ul style={{width: "80%"}}>
+            <li>
+              <LocationOnIcon />
+              Office #02 Acantilado Commercial, 49, Phase 7 Bahria Town,
+              Rawalpindi, Islamabad, 46000
             </li>
-            <li className="payment-method__item">
-              <img src={PayPal} alt="Paypal Payment Method Icon" width={100} height={50} />
+            <li>
+              <LocationOnIcon />
+              Leather Village, Head Marala Rd , Malkay Kalan, Sialkot, Punjab
             </li>
-          </div>
-
-          <div className="PaymentMethodsContainer">
-            <li className="payment-method__item">
-              <img src={LCPayment} alt="LCPayment Method Icon" width={100} height={60} />
+            <li>
+              <LocalPhoneIcon />
+              +92 339 4022 534
             </li>
-            <div className="payment-method__item">
-              <img src={germanBank} alt="German Bank Method Icon" width={100} />
-            </div>
-          </div>
+            <li>
+              <EmailIcon />
+              usman@ahdustrachtenexport.com
+            </li>
+            <li>
+              <AccessTimeIcon />
+              Available 24/7
+            </li>
+          </ul>
+        </div>
 
-        </ul>
+        <div className="col" style={{width: "20%"}}>
+          <h4>Quick Links:</h4>
+          <ul>
+            <li><Link to={"/"}>Home</Link></li>
+            <li><Link to={"/OrderDelivery"}>Order To Delivery</Link></li>
+            <li><Link to={"/About"}>About Us</Link></li>
+            <li><Link to={"/Product"}>Products</Link></li>
+            <li><Link to={"/Contact"}>Contact Us</Link></li>
+          </ul>
+        </div>
+
+        <div className="col payment-methods" style={{width: "20%"}}>
+          <h4>Payment Methods</h4>
+          <ul>
+            <li>
+              <img src={MasterCard} alt="Master Card" width={60} height={40} />
+              <p>Master Card</p>
+            </li>
+            <li>
+              <img src={PayPal} alt="Master Card" width={60} height={40} />
+              <p>Pay Pal</p>
+            </li>
+            <li>
+              <img src={LCPayment} alt="Master Card" width={60} height={40} />
+              <p>LC Payment</p>
+            </li>
+            <li>
+              <img src={germanBank} alt="Master Card" width={60} height={40} />
+              <p>German Bank</p>
+            </li>
+          </ul>
+        </div>
       </footer>
       <div className="endText">
-        <p>&copy; {t('footerCopyRights')}</p>
+        <p>&copy; {t("footerCopyRights")}</p>
       </div>
     </section>
   );

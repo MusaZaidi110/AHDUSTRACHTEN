@@ -82,13 +82,6 @@
   "swiperCompany": "Deutschland",
   "swiperHeader": "Qualität, auf die Sie sich verlassen können – hergestellt von Experten",
   "swiperContent": "Ich bin von meinem Kauf mehr als beeindruckt! Die Handwerkskunst und die Liebe zum Detail sind wirklich beispiellos. Es ist offensichtlich, dass Exzellenz und Qualität im Mittelpunkt dieser Marke stehen. Das ist mehr als ein Produkt – es ist ein Meisterwerk. Ich freue mich schon auf meine nächste Bestellung!",
-  "footerMenuHeading1": "Website-Links",
-  "footerHome": "Startseite",
-  "footerAbout": "Über Seite",
-  "footerProduct": "Produktseite",
-  "footerContact": "Kontaktseite",
-  "footerPaymentHeader": "Zahlungsmethoden",
-  "footerCopyRights": "2025-26 Ahdus Trachten | Alle Rechte vorbehalten",
   "Orderdelivery-title": "Bestellung bis Lieferung",
   "Orderdelivery-text": "Von der Auftragserteilung bis zur Lieferung legen wir Wert auf Qualität, Authentizität und Ihre Zufriedenheit. Wenn Sie sich für uns entscheiden, werden Sie Teil einer Reise, die auf Handwerkskunst und Exzellenz basiert. Vertrauen Sie darauf, dass wir Lederprodukte liefern, die so einzigartig sind wie Sie. Bestellen Sie noch heute und erleben Sie den Unterschied!",
   "WhyChooseMission": "Qualität und Handwerkskunst neu definieren, Produkt für Produkt. Wir sind bestrebt, unseren Geschäftspartnern einen außergewöhnlichen Mehrwert zu bieten, indem wir erstklassige Produkte anbieten, die Qualität, Leidenschaft und Hingabe verkörpern. Unsere Mission ist es, langfristige Partnerschaften durch ständige Zuverlässigkeit, erstklassige Handwerkskunst und ein gemeinsames Engagement für Spitzenleistungen zu fördern.",
@@ -173,5 +166,12 @@
   "retailerTitle": "Unser Händler in Deutschland",
   "retailerLocation" : "Standort des Händlers",
   "retailerWebsite" : "Händler-Website",
-  "retailerContact" : "Wenden Sie sich an den Händler"
+  "retailerContact" : "Wenden Sie sich an den Händler",
+  "footerMenuHeading1": "Website-Links",
+  "footerHome": "Startseite",
+  "footerAbout": "Über Seite",
+  "footerProduct": "Produktseite",
+  "footerContact": "Kontaktseite",
+  "footerPaymentHeader": "Zahlungsmethoden",
+  "footerCopyRights": "2025-26 Ahdus Trachten | Alle Rechte vorbehalten"
 }

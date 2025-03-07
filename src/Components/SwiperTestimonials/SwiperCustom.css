@@ -78,6 +78,7 @@
     transform: translate3d(0px, 0px, 0px) !important;
   }
   .titleHeader {
-    padding-left: 2rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
   }
 }
