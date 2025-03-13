@@ -4,13 +4,14 @@
   overflow: hidden;
   width: 100vw;
   background-color: #333;
-  margin-top: 10rem;
   padding-bottom: 0px;
 }
 
 .aboutContent {
   max-width: 1050px;
   margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
 }
 
 .aboutContent .borderLine .upline {
